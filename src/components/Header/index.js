@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#home">The Period Collective</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
