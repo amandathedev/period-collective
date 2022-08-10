@@ -15,20 +15,6 @@ import EventsPage from "./pages/events";
 const App = () => {
   return (
     <div className="App">
-      {/* <Header /> */}
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/donate" element={<DonatePage />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/partners" element={<PartnersPage />} />
-          <Route path="/get-involved" element={<GetInvolvedPage />} />
-          <Route path="/events" element={<EventsPage />} />
-        </Routes>
-      </BrowserRouter> */}
-      {/* <Footer /> */}
     </div>
   );
 };
