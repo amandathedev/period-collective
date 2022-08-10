@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const GetInvolvedPage = () => {
-  return ( <div></div> );
-}
- 
+  return (
+    <div>
+      <h1>get involved</h1>
+    </div>
+  );
+};
+
 export default GetInvolvedPage;
