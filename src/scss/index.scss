@@ -1,0 +1,8 @@
+@import './global.scss';
+
+.hero-container {
+  // background: url('../images/boxes.png') no-repeat top center fixed;
+  height: 650px;
+  width: 100%;
+  background: linear-gradient(90deg, #EF887A 26.04%, rgba(179, 221, 242, 0) 100%);
+}

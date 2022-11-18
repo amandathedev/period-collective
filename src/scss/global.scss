@@ -1,0 +1,53 @@
+// Colors
+  $primaryBlue: #00626C;
+  $blueHover: #008693;
+
+  #root {
+    padding: 0 32px;
+  }
+
+// Buttons
+  .blue-button {
+    background-color: $primaryBlue;
+    border: $primaryBlue;
+    color: white;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 21rem;
+    padding: 1rem 5rem;
+    
+    &:hover {
+      background-color: $blueHover;
+      text-decoration: none;
+      color: white;
+    }
+    
+    &:active {
+      background: $blueHover;
+      text-decoration: none;
+      color: white;
+    }
+    
+    &:focus {
+      text-decoration: none;
+      background: $blueHover;
+      color: white;
+      // box-shadow: 0 0 0 0.25rem $lightPurple;
+    }
+    
+    &.disabled,
+    &:disabled {
+      text-decoration: none;
+      // background-color: $lightPurple;
+      // border-color: $lightPurple;
+      // color: $textGray;
+      cursor: not-allowed;
+    }
+  }
