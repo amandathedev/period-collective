@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "The Period Collective",
+  "name": "The Period Collective",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "TPC_girl.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "TPC_girl.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "TPC_girl.png",
       "type": "image/png",
       "sizes": "512x512"
     }
