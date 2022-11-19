@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
-import Button from "react-bootstrap/Button";
+import { Image, Button } from "react-bootstrap";
+
 import "../scss/index.scss";
 
 const LandingPage = () => {
@@ -8,8 +9,10 @@ const LandingPage = () => {
     <div>
       <Header />
       <div className="hero-container">
-        <img src="../images/boxes.png" alt="Two people carrying boxes of menstrual products" />
-        
+        <Image
+          src="../images/boxes.png"
+          alt="Two people carrying boxes of menstrual products"
+        ></Image>
         <h1 className="hero-text">
           PERIOD PRODUCTS <br></br>
           <span className="hero-span">FOR ALL IN </span>CHICAGO.

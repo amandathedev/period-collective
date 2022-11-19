@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 // Colors
   $primaryBlue: #00626C;
   $blueHover: #008693;
 
+// Global styles
   #root {
     padding: 0 32px;
+    font-family: 'Lato', sans-serif;
   }
 
 // Buttons

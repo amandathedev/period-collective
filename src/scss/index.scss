@@ -5,4 +5,19 @@
   height: 650px;
   width: 100%;
   background: linear-gradient(90deg, #EF887A 26.04%, rgba(179, 221, 242, 0) 100%);
+  padding: 140px;
+
+  .hero-text {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 32px;
+    letter-spacing: -0.1rem;
+    // text-align: center;
+
+    .hero-span {
+      font-size: 32px;
+      padding-right: 6px;
+    }
+  }
 }
