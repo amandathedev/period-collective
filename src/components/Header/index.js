@@ -7,8 +7,8 @@ const Header = () => {
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="/">The Period Collective</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="site-header" />
+        <Navbar.Collapse id="site-header">
           <Nav>
             <Nav.Link href="about">About</Nav.Link>
             <Nav.Link href="get-involved">Get Involved</Nav.Link>
@@ -20,6 +20,6 @@ const Header = () => {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default Header;

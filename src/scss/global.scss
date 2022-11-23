@@ -8,6 +8,10 @@
   #root {
     padding: 0 32px;
     font-family: 'Lato', sans-serif;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
   }
 
 // Buttons
@@ -43,15 +47,11 @@
       text-decoration: none;
       background: $blueHover;
       color: white;
-      // box-shadow: 0 0 0 0.25rem $lightPurple;
     }
     
     &.disabled,
     &:disabled {
       text-decoration: none;
-      // background-color: $lightPurple;
-      // border-color: $lightPurple;
-      // color: $textGray;
       cursor: not-allowed;
     }
   }
