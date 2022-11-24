@@ -1,0 +1,32 @@
+@import '../../scss/global.scss';
+
+// @mixin background-image($img, $test) {
+//   background-image: url('../images/boxes.png');
+// }
+
+.hero-container {
+  background: url('../../images/boxes.png') no-repeat top center fixed;
+  height: 450px;
+  width: 100%;
+  // background: linear-gradient(90deg, #EF887A 26.04%, rgba(179, 221, 242, 0) 100%);
+  $colorStart: rgba(239, 136, 122, 1);
+  $colorEnd: rgba(179, 221, 242, 0);
+  // @include background-image(linear-gradient(to bottom, $colorStart, $colorEnd), url("../images/boxes.png"));
+  // https://medium.com/@alvaro.saburido/applying-gradient-trends-in-sass-cf825d70f5fe
+  padding: 140px;
+  color: white;
+
+  .hero-text {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 32px;
+    letter-spacing: -0.1rem;
+    // text-align: center;
+
+    .hero-span {
+      font-size: 32px;
+      padding-right: 6px;
+    }
+  }
+}
