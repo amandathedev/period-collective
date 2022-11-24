@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 const WhoWeAre = () => {
   return (
     <div>
-      <h2>Who We Are</h2>
+      <h2>Who we are</h2>
       <p>
         The Period Collective is a 501(3)c Nonprofit in Chicago that provides
         period products to local charity centers to help provide dignity to all

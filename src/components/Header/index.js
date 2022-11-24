@@ -28,7 +28,7 @@ const Header = () => {
             <Nav.Link href="contact">
               Contact Us<span className="nav-divider"></span>
             </Nav.Link>
-            <Button className='donate-button'>Donate</Button>
+            <Button className='yellow-button'>Donate</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -57,3 +57,13 @@
       cursor: not-allowed;
     }
   }
+
+  .yellow-button {
+    @extend .blue-button;
+    background-color: $primaryYellow;
+    border: 4px solid black;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0.4rem 5rem;
+    color: black;
+  }
