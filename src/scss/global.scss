@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+// Colors
+  $primaryBlue: #00626C;
+  $blueHover: #008693;
+  $crystal: #B5D7D9;
+  $primaryCoral: #EF887A;
+  $primaryYellow: #FFCE07;
+  $yellowHover: #ffeb9b;
+
+// Global styles
+  #root {
+    font-family: 'Lato', sans-serif;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+// Buttons
+  .blue-button {
+    background-color: $primaryBlue;
+    border: $primaryBlue;
+    color: white;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 21rem;
+    padding: 1rem 6rem;
+    
+    &:hover {
+      background-color: $blueHover;
+      text-decoration: none;
+      color: white;
+    }
+    
+    &:active {
+      background: $blueHover;
+      text-decoration: none;
+      color: white;
+    }
+    
+    &:focus {
+      text-decoration: none;
+      background: $blueHover;
+      color: white;
+    }
+    
+    &.disabled,
+    &:disabled {
+      text-decoration: none;
+      cursor: not-allowed;
+    }
+  }
+
+  .yellow-button {
+    @extend .blue-button;
+    background-color: $primaryYellow;
+    border: 4px solid black;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0.4rem 5rem;
+    color: black;
+
+    &:hover, &:active, &:focus {
+      background-color: $yellowHover;
+      text-decoration: none;
+      color: black;
+      border: 4px solid black;
+    }
+  }
+
+// Containers
+  .site-container {
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+// Headers
+  .main-h2 {
+    font-family: 'Staatliches';
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.1rem;
+    margin-bottom: 32px;
+  }
