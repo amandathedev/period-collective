@@ -1,11 +1,11 @@
 import React from 'react';
 
-const HowWeWork = () => {
+const LandingNews = () => {
   return (
     <div className='site-container'>
-      <h2>How we work</h2>
+      <h2>News & Events</h2>
     </div>
   );
 };
 
-export default HowWeWork;
+export default LandingNews;

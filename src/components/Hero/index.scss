@@ -7,7 +7,8 @@
 .hero-container {
   background: url('../../images/boxes.png') no-repeat top center fixed;
   height: 450px;
-  width: 100%;
+  width: calc(100vw - 64px);
+  margin: 0 32px;
   // background: linear-gradient(90deg, #EF887A 26.04%, rgba(179, 221, 242, 0) 100%);
   $colorStart: rgba(239, 136, 122, 1);
   $colorEnd: rgba(179, 221, 242, 0);

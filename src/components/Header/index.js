@@ -9,7 +9,7 @@ import './index.scss';
 
 const Header = () => {
   return (
-    <Navbar expand="lg" sticky="top" id="site-header">
+    <Navbar expand="lg" sticky="top" id="site-header" className='site-container'>
       <Container className="nav-container">
         <Navbar.Brand href="/">The Period Collective</Navbar.Brand>
         <Navbar.Toggle aria-controls="site-header" />

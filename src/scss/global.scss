@@ -3,12 +3,12 @@
 // Colors
   $primaryBlue: #00626C;
   $blueHover: #008693;
+  $crystal: #B5D7D9;
   $primaryCoral: #EF887A;
   $primaryYellow: #FFCE07;
 
 // Global styles
   #root {
-    padding: 0 32px;
     font-family: 'Lato', sans-serif;
 
     @media (max-width: 768px) {
@@ -66,4 +66,10 @@
     line-height: 28px;
     padding: 0.4rem 5rem;
     color: black;
+  }
+
+// Containers
+  .site-container {
+    margin: 0 auto;
+    padding: 0 32px;
   }
