@@ -83,6 +83,26 @@
     padding: 0 32px;
   }
 
+  .d-flex {
+    display: flex;
+  }
+
+  .flex-row {
+    flex-direction: row;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .space-around {
+    justify-content: space-around;
+  }
+
 // Headers
   .main-h2 {
     font-family: 'Staatliches';
