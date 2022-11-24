@@ -1,5 +1,39 @@
 @import '../../scss/global.scss';
 
 #site-header {
-  text-align: right;
+  height: 6rem;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    max-width: 100vw;
+  }
+
+  .nav-links {
+    justify-content: right;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    
+    .nav-divider {
+      color: $primaryCoral;
+      margin: 0 0 0 1rem;
+      font-weight: 900;
+      font-size: 1.2rem;
+      cursor: default;
+    }
+    
+    .donate-button {
+      font-size: 18px;
+      line-height: 28px;
+      background-color: $primaryYellow;
+      border: 4px solid black;
+      color: black;
+      border-radius: 0;
+      padding: 0 5rem;
+    }
+  }
 }
