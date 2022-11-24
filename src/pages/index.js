@@ -1,8 +1,10 @@
-import React from "react";
-import Header from "../components/Header";
-import { Image, Button } from "react-bootstrap";
+import React from 'react';
 
-import "../scss/index.scss";
+import { Image, Button } from 'react-bootstrap';
+
+import Header from '../components/Header';
+
+import '../scss/index.scss';
 
 const LandingPage = () => {
   return (
