@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,9 +9,16 @@ import './index.scss';
 
 const Header = () => {
   return (
-    <Navbar expand="lg" sticky="top" id="site-header" className='site-container'>
+    <Navbar
+      expand="lg"
+      sticky="top"
+      id="site-header"
+      className="site-container"
+    >
       <Container className="nav-container">
-        <Navbar.Brand href="/">The Period Collective</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <Image src="./images/logo-horiz.png" className='nav-logo'/>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="site-header" />
         <Navbar.Collapse className="nav-links">
           <Nav>
@@ -28,7 +35,7 @@ const Header = () => {
             <Nav.Link href="contact">
               Contact Us<span className="nav-divider"></span>
             </Nav.Link>
-            <Button className='yellow-button'>Donate</Button>
+            <Button className="yellow-button">Donate</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

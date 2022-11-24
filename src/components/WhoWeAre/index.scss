@@ -1,9 +1,27 @@
 @import '../../scss/global.scss';
 
+
 .who-we-are {
   text-align: center;
+  margin-top: 2rem !important;
 
-  h2 {
-    text-transform: uppercase;
+  .who-we-are-content {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+
+    img {
+      width: 20rem;
+    }
+
+    p {
+      margin: auto 0;
+      align-content: center;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+    }
   }
 }

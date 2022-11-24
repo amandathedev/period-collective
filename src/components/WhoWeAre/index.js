@@ -6,8 +6,8 @@ import './index.scss';
 const WhoWeAre = () => {
   return (
     <div className="who-we-are site-container">
-      <h2>Who we are</h2>
-      <div className="">
+      <h2 className="main-h2">Who we are</h2>
+      <div className="who-we-are-content">
         <Image src="./images/logo-horiz.png" />
         <p>
           The Period Collective is a 501(3)c Nonprofit in Chicago that provides
