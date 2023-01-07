@@ -26,14 +26,15 @@
     border-radius: 0;
     cursor: pointer;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 1.3vw;
     line-height: 29px;
     text-align: center;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    max-width: 21rem;
+    max-width: 21vw;
     padding: 1rem 6rem;
+    word-wrap: no-wrap;
     
     &:hover {
       background-color: $blueHover;

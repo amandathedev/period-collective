@@ -1,23 +1,20 @@
 import React from 'react';
 
-import { Button, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { FaRegHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import './index.scss';
 
 const Header = () => {
   return (
-    <Navbar
-      expand="lg"
-      sticky="top"
-      id="site-header"
-      className="site-container"
-    >
+    <Navbar fixed="top" expand="lg" id="site-header">
       <Container className="nav-container">
         <Navbar.Brand href="/">
-          <Image src="./images/logo-horiz.png" className='nav-logo'/>
+          <Image src="./images/logo-horiz.png" className="nav-logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="site-header" />
         <Navbar.Collapse className="nav-links">
@@ -28,14 +25,15 @@ const Header = () => {
             <Nav.Link href="get-involved">
               Get Involved<span className="nav-divider">|</span>
             </Nav.Link>
-            {/* <Nav.Link href="partners">Partners</Nav.Link> */}
             <Nav.Link href="news">
               News & Events<span className="nav-divider">|</span>
             </Nav.Link>
             <Nav.Link href="contact">
               Contact Us<span className="nav-divider"></span>
             </Nav.Link>
-            <Button className="yellow-button">Donate</Button>
+            <Link to="/donate" className="yellow-button">
+              Donate <FaRegHeart className='heart-icon'/>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

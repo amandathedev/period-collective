@@ -1,7 +1,10 @@
+// @import '../../scss/global.scss';
 @import '../../scss/global.scss';
 
 #site-header {
   height: 6rem;
+  background-color: white;
+  margin-bottom: 5rem;
 
   .nav-container {
     display: flex;
@@ -9,7 +12,7 @@
     align-items: center;
     height: 100%;
     padding: 0;
-    max-width: 100vw;
+    max-width: 95vw;
 
     .nav-logo {
       width: 12rem;

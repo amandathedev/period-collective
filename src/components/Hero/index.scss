@@ -1,21 +1,19 @@
 @import '../../scss/global.scss';
 
-// @mixin background-image($img, $test) {
-//   background-image: url('../images/boxes.png');
-// }
-
 .hero-container {
-  background: url('../../../public/images/boxes.png') no-repeat top center fixed;
+  background-image: url('../../../public/images/boxes.png') no-repeat top center;
+  background-size: cover;
+  background: linear-gradient(90deg, #EF887A 26.04%, rgba(179, 221, 242, 0) 100%);
   height: 450px;
   width: calc(100vw - 64px);
-  margin: 0 32px;
-  // background: linear-gradient(90deg, #EF887A 26.04%, rgba(179, 221, 242, 0) 100%);
-  $colorStart: rgba(239, 136, 122, 1);
-  $colorEnd: rgba(179, 221, 242, 0);
-  // @include background-image(linear-gradient(to bottom, $colorStart, $colorEnd), url("../images/boxes.png"));
-  // https://medium.com/@alvaro.saburido/applying-gradient-trends-in-sass-cf825d70f5fe
+  margin: 8rem 32px 0;
   padding: 140px;
   color: white;
+  z-index: 0;
+
+  img {
+    z-index: 1;
+  }
 
   .hero-text {
     font-weight: 600;
@@ -23,7 +21,6 @@
     line-height: 60px;
     margin-bottom: 32px;
     letter-spacing: -0.1rem;
-    // text-align: center;
 
     .hero-span {
       font-size: 32px;

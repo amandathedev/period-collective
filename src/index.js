@@ -1,17 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import reportWebVitals from "./reportWebVitals";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AboutPage from "./pages/about";
-import LandingPage from "./pages";
-import PartnersPage from "./pages/partners";
-import GetInvolvedPage from "./pages/get-involved";
-import NewsPage from "./pages/news";
-import ContactPage from "./pages/contact";
+import React from 'react';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import LandingPage from './pages';
+import AboutPage from './pages/about';
+import ContactPage from './pages/contact';
+import GetInvolvedPage from './pages/get-involved';
+import NewsPage from './pages/news';
+import PartnersPage from './pages/partners';
+import reportWebVitals from './reportWebVitals';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
