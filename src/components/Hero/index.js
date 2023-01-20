@@ -8,15 +8,22 @@ import './index.scss';
 const Hero = () => {
   return (
     <div className="hero-container">
+      <div className="hero-image-overlay"></div>
+      <img
+        src="https://images.unsplash.com/photo-1545153485-e3bf87d59682"
+        alt="tampons"
+        className="hero-image"
+      />
       <div className="hero-text-container">
         <h1 className="hero-text">
-          PERIOD PRODUCTS <br></br>
-          <span className="hero-span">FOR ALL IN </span>CHICAGO.
+          PERIOD PRODUCTS
+          <br />
+          <span>FOR ALL IN</span> CHICAGO<span className="period">.</span>
         </h1>
-        <Link to="/get-involved" className="blue-button">
-          Get Involved
-        </Link>
       </div>
+      <Link className="blue-button" to="/get-involved">
+        Get Involved
+      </Link>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import './index.scss';
 
 const WhoWeAre = () => {
@@ -8,14 +8,14 @@ const WhoWeAre = () => {
     <div className="who-we-are site-container">
       <h2 className="main-h2">Who we are</h2>
       <div className="who-we-are-content">
-        <Image src="./images/logo-horiz.png" />
+        <Image src="./images/tpc.png" />
         <p>
           The Period Collective is a 501(3)c Nonprofit in Chicago that provides
           period products to local charity centers to help provide dignity to
           all Chicagoans.
         </p>
       </div>
-      <Button className="blue-button">Learn more</Button>
+      <button className="blue-button">Learn more</button>
     </div>
   );
 };

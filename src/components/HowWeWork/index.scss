@@ -1,10 +1,35 @@
-@import '../../scss/global.scss';
+@import "../../scss/global.scss";
 
 .how-we-work {
-  img {
-    width: 20vw;
-    height: 20vh;
-    border-radius: 50%;
-    border: 4px solid $primaryCoral;
+  background-color: #f2f1ef;
+  padding-bottom: 64px !important;
+
+  h2 {
+    padding-top: 64px;
+  }
+
+  .row {
+    margin: 0 auto;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30vw;
+
+      .circle {
+        width: 30vw;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        width: 70%;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }

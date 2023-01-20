@@ -1,5 +1,4 @@
-@import '../../scss/global.scss';
-
+@import "../../scss/global.scss";
 
 .who-we-are {
   text-align: center;
@@ -17,11 +16,15 @@
     }
 
     p {
-      margin: auto 0;
+      margin: auto 0 auto 1rem;
       align-content: center;
       font-size: 18px;
       line-height: 24px;
       font-weight: 600;
     }
+  }
+
+  button {
+    margin: 40px auto 98px;
   }
 }

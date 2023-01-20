@@ -14,7 +14,7 @@ const Header = () => {
     <Navbar fixed="top" expand="lg" id="site-header">
       <Container className="nav-container">
         <Navbar.Brand href="/">
-          <Image src="./images/logo-horiz.png" className="nav-logo" />
+          <Image src="./images/tpc.png" className="nav-logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="site-header" />
         <Navbar.Collapse className="nav-links">
@@ -32,7 +32,7 @@ const Header = () => {
               Contact Us<span className="nav-divider"></span>
             </Nav.Link>
             <Link to="/donate" className="yellow-button">
-              Donate <FaRegHeart className='heart-icon'/>
+              Donate <FaRegHeart className="heart-icon" />
             </Link>
           </Nav>
         </Navbar.Collapse>
