@@ -1,6 +1,32 @@
-@import '../../scss/global.scss';
+@import "../../scss/global.scss";
 
 .landing-quote {
-  background-color: #B5D7D9;
-  padding: 0 32px;
+  background-color: #b5d7d9;
+  padding: 64px 32px;
+  text-align: center;
+
+  h3 {
+    width: 70%;
+    margin: 0 auto 1rem;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .quote-attr {
+    margin-bottom: 3rem;
+    font-style: italic;
+    font-size: 22px;
+
+    a {
+      color: #353535;
+    }
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 32px;
+  }
 }
