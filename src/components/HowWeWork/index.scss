@@ -8,6 +8,22 @@
     padding-top: 64px;
   }
 
+  .image-header-wrapper {
+    position: relative;
+    width: 100%;
+
+    h3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 400;
+      font-family: "Staatliches";
+      font-size: 70px;
+      line-height: 100px;
+      padding: 0 0.4rem;
+    }
+  }
+
   .row {
     margin: 0 auto;
     justify-content: space-between;

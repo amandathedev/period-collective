@@ -106,7 +106,7 @@ $yellowHover: #ffeb9b;
   justify-content: space-around;
 }
 
-// Headers
+// Text
 .main-h2 {
   font-family: "Staatliches";
   font-size: 48px;
@@ -114,4 +114,18 @@ $yellowHover: #ffeb9b;
   text-align: center;
   letter-spacing: -0.1rem;
   margin-bottom: 32px;
+}
+
+.link {
+  color: $primaryBlue;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    color: $blueHover;
+  }
 }
