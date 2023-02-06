@@ -1,7 +1,23 @@
-@import '../../scss/global.scss';
+@import "../../scss/global.scss";
 
 .footer {
   background-color: $primaryBlue;
   color: white;
-  padding: 0 32px;
+  padding: 64px 128px;
+
+  .org-name {
+    font-family: Staatliches;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .we-serve {
+    font-family: Staatliches;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
 }
