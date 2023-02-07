@@ -10,7 +10,6 @@ const Footer = () => {
       <div className="d-flex flex-row space-between">
         <div className="d-flex flex-column">
           <p className="org-name">The Period Collective</p>
-          <p>123 Main St Chicago, Illinois, 00000</p>
           <p>(312) 620-9959</p>
           <p>contact@theperiodcollective.org</p>
         </div>
@@ -26,7 +25,7 @@ const Footer = () => {
         </div>
         <div>
           <p>Proud Affiliate of</p>
-          {/* <img src="./images/period.png" /> */}
+          <img src="./images/alliance.svg" alt="alliance for period supplies" />
         </div>
       </div>
     </div>
