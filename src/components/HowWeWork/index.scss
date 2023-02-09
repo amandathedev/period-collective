@@ -1,0 +1,56 @@
+@import "../../scss/global.scss";
+
+.how-we-work {
+  background-color: #f2f1ef;
+  padding-bottom: 64px !important;
+
+  h2 {
+    padding-top: 64px;
+  }
+
+  .image-header-wrapper {
+    position: relative;
+    width: 100%;
+
+    h3 {
+      position: absolute;
+      top: -1rem;
+      left: -1rem;
+      font-weight: 400;
+      font-family: "Staatliches";
+      font-size: 70px;
+      line-height: 100px;
+      padding: 0 0.4rem;
+    }
+  }
+
+  .row {
+    margin: 0 auto;
+    justify-content: space-between;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30vw;
+
+      .circle {
+        width: 30vw;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        width: 70%;
+        margin-bottom: 2rem;
+      }
+
+      .blue-button {
+        padding: 1rem 3.2rem !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../scss/global.scss";
+
+#site-header {
+  height: 6rem;
+  background-color: white;
+  margin-bottom: 5rem;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    max-width: 95vw;
+
+    .nav-logo {
+      width: 12rem;
+    }
+  }
+
+  .nav-links {
+    justify-content: right;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    .nav-divider {
+      color: $primaryCoral;
+      margin: 0 0 0 1rem;
+      font-weight: 900;
+      font-size: 1.2rem;
+      cursor: default;
+    }
+  }
+}

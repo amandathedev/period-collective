@@ -1,0 +1,39 @@
+@import "../../scss/global.scss";
+
+.site-container.landing-news {
+  padding: 48px 32px 64px;
+
+  .header-container {
+    h2 {
+      padding: 0 18px 24px 0;
+      text-align: left;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      margin: 0;
+    }
+
+    a {
+      padding: 0 0 0 12px;
+      line-height: 60px;
+    }
+  }
+
+  .news-container {
+    width: 100%;
+    justify-content: space-around;
+
+    .news-card {
+      width: 24vw;
+      text-align: center;
+
+      a {
+        padding-top: 16px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

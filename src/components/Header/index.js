@@ -1,25 +1,44 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import React from 'react';
+
+import { Image } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { FaRegHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
+import './index.scss';
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
-      <Container>
-        <Navbar.Brand href="/">The Period Collective</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+    <Navbar fixed="top" expand="lg" id="site-header">
+      <Container className="nav-container">
+        <Navbar.Brand href="/">
+          <Image src="./images/tpc.png" className="nav-logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="site-header" />
+        <Navbar.Collapse className="nav-links">
           <Nav>
-            <Nav.Link href="about">About</Nav.Link>
-            <Nav.Link href="get-involved">Get Involved</Nav.Link>
-            {/* <Nav.Link href="partners">Partners</Nav.Link> */}
-            <Nav.Link href="news">News & Events</Nav.Link>
-            <Nav.Link href="contact">Contact Us</Nav.Link>
+            <Nav.Link href="about">
+              About<span className="nav-divider">|</span>
+            </Nav.Link>
+            <Nav.Link href="get-involved">
+              Get Involved<span className="nav-divider">|</span>
+            </Nav.Link>
+            <Nav.Link href="news">
+              News & Events<span className="nav-divider">|</span>
+            </Nav.Link>
+            <Nav.Link href="contact">
+              Contact Us<span className="nav-divider"></span>
+            </Nav.Link>
+            <Link to="/donate" className="yellow-button">
+              Donate <FaRegHeart className="heart-icon" />
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default Header;
