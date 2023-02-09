@@ -1,5 +1,4 @@
-// @import '../../scss/global.scss';
-@import '../../scss/global.scss';
+@import "../../scss/global.scss";
 
 #site-header {
   height: 6rem;
@@ -24,7 +23,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    
+
     .nav-divider {
       color: $primaryCoral;
       margin: 0 0 0 1rem;

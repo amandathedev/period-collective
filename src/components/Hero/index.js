@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import { Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import './index.scss';
