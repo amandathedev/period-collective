@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages';
 import AboutPage from './pages/about';
 import ContactPage from './pages/contact';
+import DonatePage from './pages/donate';
 import GetInvolvedPage from './pages/get-involved';
 import NewsPage from './pages/news';
 import PartnersPage from './pages/partners';
@@ -23,6 +24,7 @@ root.render(
       <Route path="partners" element={<PartnersPage />} />
       <Route path="news" element={<NewsPage />} />
       <Route path="contact" element={<ContactPage />} />
+      <Route path="donate" element={<DonatePage />} />
     </Routes>
   </BrowserRouter>
 );
