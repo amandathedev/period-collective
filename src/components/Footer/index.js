@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { isMobile } from 'react-device-detect';
 import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import './index.scss';
 
@@ -23,7 +24,7 @@ const Footer = () => {
               <BsFacebook size={'3rem'} />
             </a>
             <a href="https://www.instagram.com/periodcoll/">
-              <BsInstagram size={'3rem'} />
+              <BsInstagram size={isMobile ? '3rem' : '1rem'} />
             </a>
             <a href="https://www.linkedin.com/company/the-period-collective/">
               <BsLinkedin size={'3rem'} />

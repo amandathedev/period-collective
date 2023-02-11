@@ -3,10 +3,11 @@
 .footer {
   background-color: $primaryBlue;
   color: white;
-  padding: 42px 84px;
+  padding: 3.2vw 6vw;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  width: 100%;
 
   .footer-header {
     font-family: Staatliches;
@@ -37,12 +38,11 @@
   }
 
   .affiliate {
-    position: relative;
-
     p {
-      position: absolute;
-      top: -1rem;
-      left: -3.6rem;
+      text-align: center;
+      margin: 0 0 -0.2rem -1rem;
+      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     img {

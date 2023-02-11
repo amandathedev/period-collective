@@ -171,3 +171,36 @@ $yellowHover: #ffeb9b;
     color: $blueHover;
   }
 }
+
+// Media queries
+$mobile: 767px; // max
+$tablet: 1023px; // max
+$desktop: 1023px; // min
+
+// Mobile screens:
+// @media (max-width: $mobile) {
+// }
+
+// Tablet screens:
+// @media (min-width: $mobile) and (max-width: $desktop) {
+// }
+
+// Desktop screens:
+// @media (min-width: $desktop) {
+// }
+
+//? If tablet and mobile are the same:
+// @media (max-width: $desktop) {
+// }
+
+// Desktop screens:
+// @media (min-width: $desktop) {
+// }
+
+//? If tablet and desktop are the same:
+// @media (max-width: $mobile) {
+// }
+
+// Desktop screens:
+// @media (min-width: $mobile) {
+// }
