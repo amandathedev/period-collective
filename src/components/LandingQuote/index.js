@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { FaRegHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './index.scss';
 
@@ -19,7 +18,7 @@ const LandingQuote = () => {
       </p>
       <h4>We believe everyone has the right to dignity.</h4>
       <Link className="yellow-button" to="/donate">
-        Donate <FaRegHeart className="heart-icon" />
+        Donate <img src="./images/black-heart-drop.svg" />
       </Link>
     </div>
   );

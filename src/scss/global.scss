@@ -79,6 +79,10 @@ $yellowHover: #ffeb9b;
     color: black;
     border: 4px solid black;
   }
+
+  img {
+    width: 2rem;
+  }
 }
 
 // Containers
@@ -109,6 +113,39 @@ $yellowHover: #ffeb9b;
 
 .space-evenly {
   justify-content: space-evenly;
+}
+
+// Spacing
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
 }
 
 // Text
