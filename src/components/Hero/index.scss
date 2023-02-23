@@ -1,10 +1,77 @@
 @import "../../scss/global.scss";
 
 .hero-container {
-  height: 650px;
+  height: 40vh;
   width: 100%;
   padding: 0 32px;
   position: relative;
+  margin-top: 12vh;
+
+  @media (max-width: 1023px) {
+    height: 30vh;
+    padding: 0;
+    margin-top: 8vh;
+  }
+
+  .hero-text-container {
+    position: absolute;
+    top: 3rem;
+    left: 6rem;
+
+    @media (max-width: 767px) {
+      top: 4rem;
+      left: 2rem;
+    }
+
+    @media (min-width: 767px) and (max-width: 1023px) {
+      top: 5rem;
+      left: 3rem;
+    }
+
+    h1 {
+      font-family: "Staatliches", sans-serif;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 48px;
+      color: #353535;
+      text-align: center;
+
+      span {
+        font-size: 40px;
+      }
+
+      .period {
+        font-size: 60px;
+        font-family: "Lato", sans-serif;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 28px;
+
+        span {
+          font-size: 22px;
+        }
+
+        .period {
+          font-size: 32px;
+        }
+      }
+
+      @media (min-width: 767px) and (max-width: 1023px) {
+        font-size: 36px;
+        line-height: 45px;
+
+        span {
+          font-size: 32px;
+        }
+
+        .period {
+          font-size: 32px;
+        }
+      }
+    }
+  }
 
   .hero-image-overlay {
     position: absolute;
@@ -20,78 +87,29 @@
     object-fit: cover;
   }
 
-  .hero-text-container {
-    position: absolute;
-    top: 40%;
-    left: 140px;
-
-    h1 {
-      font-family: "Staatliches", sans-serif;
-      font-size: 60px;
-      font-weight: 400;
-      line-height: 68px;
-      color: #353535;
-      text-align: center;
-
-      span {
-        font-size: 40px;
-      }
-
-      .period {
-        font-size: 60px;
-        font-family: "Lato", sans-serif;
-      }
-    }
-  }
-
   a {
     position: absolute;
     bottom: 26%;
-    left: 12%;
+    left: 7rem;
     width: 436px;
     height: 64px;
-  }
+    padding: 1rem;
+    display: flex;
 
-  @media (max-width: 768px) {
-    height: 400px;
-
-    .hero-text-container {
-      top: 120px;
-      h1 {
-        font-size: 36px;
-        line-height: 45px;
-        span {
-          font-size: 32px;
-        }
-      }
+    @media (max-width: 767px) {
+      bottom: 4rem;
+      left: 2.6rem;
+      height: 3rem;
+      font-size: 14px;
+      max-width: 8rem;
     }
 
-    .hero-button {
-      bottom: 20px;
-      font-size: 20px;
-      height: 50px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    height: 250px;
-
-    .hero-text-container {
-      top: 80px;
-
-      h1 {
-        font-size: 24px;
-        line-height: 30px;
-        span {
-          font-size: 22px;
-        }
-      }
-    }
-
-    .hero-button {
-      bottom: 16px;
+    @media (min-width: 767px) and (max-width: 1023px) {
+      left: 6rem;
+      width: 300px;
+      height: 56px;
+      display: flex;
       font-size: 18px;
-      height: 40px;
     }
   }
 }

@@ -3,7 +3,6 @@
 #site-header {
   height: 6rem;
   background-color: white;
-  margin-bottom: 5rem;
 
   .nav-container {
     display: flex;
@@ -12,6 +11,11 @@
     height: 100%;
     padding: 0;
     max-width: 95vw;
+
+    @media (max-width: 768px) {
+      max-width: unset;
+      width: 90%;
+    }
 
     .nav-logo {
       width: 12rem;

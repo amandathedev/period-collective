@@ -15,11 +15,11 @@ const LandingPage = () => {
     <div>
       <Header />
       <Hero />
-      <WhoWeAre />
+      {/* <WhoWeAre />
       <HowWeWork />
       <LandingQuote />
       <LandingNews />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
