@@ -10,6 +10,10 @@ $primaryCoral: #ef887a;
 $primaryYellow: #ffce07;
 $yellowHover: #ffeb9b;
 
+// Media queries
+$mobile: 767px; // max
+$desktop: 1023px; // min
+
 // Global styles
 #root {
   font-family: "Lato", sans-serif;
@@ -34,7 +38,10 @@ $yellowHover: #ffeb9b;
   justify-content: center;
   text-decoration: none;
   max-width: 21vw;
-  padding: 1rem 6rem;
+  display: flex;
+  width: 436px;
+  height: 64px;
+  padding: 1rem;
   display: flex;
 
   &:hover {
@@ -59,6 +66,19 @@ $yellowHover: #ffeb9b;
   &:disabled {
     text-decoration: none;
     cursor: not-allowed;
+  }
+
+  @media (max-width: $mobile) {
+    height: 3rem;
+    font-size: 14px;
+    max-width: 8rem;
+  }
+
+  @media (min-width: $mobile) and (max-width: $desktop) {
+    width: 300px;
+    height: 56px;
+    display: flex;
+    font-size: 18px;
   }
 }
 
@@ -171,11 +191,6 @@ $yellowHover: #ffeb9b;
     color: $blueHover;
   }
 }
-
-// Media queries
-$mobile: 767px; // max
-$tablet: 1023px; // max
-$desktop: 1023px; // min
 
 // Mobile screens:
 // @media (max-width: $mobile) {
