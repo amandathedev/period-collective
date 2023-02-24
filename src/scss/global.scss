@@ -35,6 +35,7 @@ $yellowHover: #ffeb9b;
   text-decoration: none;
   max-width: 21vw;
   padding: 1rem 6rem;
+  display: flex;
 
   &:hover {
     background-color: $blueHover;
