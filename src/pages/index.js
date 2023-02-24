@@ -16,10 +16,10 @@ const LandingPage = () => {
       <Header />
       <Hero />
       <WhoWeAre />
-      <HowWeWork />
+      {/* <HowWeWork />
       <LandingQuote />
       <LandingNews />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
