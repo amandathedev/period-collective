@@ -9,6 +9,20 @@
   font-size: 18px;
   width: 100%;
 
+  .footer-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+  
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+  }
+
   .footer-header {
     font-family: Staatliches;
     letter-spacing: 0.2px;

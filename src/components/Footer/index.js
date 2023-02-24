@@ -7,7 +7,7 @@ import './index.scss';
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="d-flex flex-row space-between">
+      <div className="footer-container">
         <div className="d-flex flex-column">
           <p className="footer-header org-name">The Period Collective</p>
           <p>(312) 620-9959</p>
@@ -21,17 +21,17 @@ const Footer = () => {
           <p className="mt-2">Stay Connected</p>
           <div className="d-flex flex-row space-evenly social-icons">
             <a href="https://www.facebook.com/Periodcoll">
-              <BsFacebook size={'3rem'} />
+              <BsFacebook size={isMobile ? '1rem' : '3rem'} />
             </a>
             <a href="https://www.instagram.com/periodcoll/">
-              <BsInstagram size={isMobile ? '3rem' : '1rem'} />
+              <BsInstagram size={isMobile ? '1rem' : '3rem'} />
             </a>
             <a href="https://www.linkedin.com/company/the-period-collective/">
-              <BsLinkedin size={'3rem'} />
+              <BsLinkedin size={isMobile ? '1rem' : '3rem'} />
             </a>
           </div>
         </div>
-        <div className="affiliate">
+        <div className="d-flex flex-column affiliate">
           <p>Proud Affiliate of</p>
           <img src="./images/alliance.svg" alt="alliance for period supplies" />
         </div>
