@@ -79,6 +79,10 @@ $yellowHover: #ffeb9b;
     color: black;
     border: 4px solid black;
   }
+
+  img {
+    width: 2rem;
+  }
 }
 
 // Containers
@@ -111,6 +115,39 @@ $yellowHover: #ffeb9b;
   justify-content: space-evenly;
 }
 
+// Spacing
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
 // Text
 .main-h2 {
   font-family: "Staatliches";
@@ -134,3 +171,36 @@ $yellowHover: #ffeb9b;
     color: $blueHover;
   }
 }
+
+// Media queries
+$mobile: 767px; // max
+$tablet: 1023px; // max
+$desktop: 1023px; // min
+
+// Mobile screens:
+// @media (max-width: $mobile) {
+// }
+
+// Tablet screens:
+// @media (min-width: $mobile) and (max-width: $desktop) {
+// }
+
+// Desktop screens:
+// @media (min-width: $desktop) {
+// }
+
+//? If tablet and mobile are the same:
+// @media (max-width: $desktop) {
+// }
+
+// Desktop screens:
+// @media (min-width: $desktop) {
+// }
+
+//? If tablet and desktop are the same:
+// @media (max-width: $mobile) {
+// }
+
+// Desktop screens:
+// @media (min-width: $mobile) {
+// }

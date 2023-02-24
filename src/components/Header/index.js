@@ -4,7 +4,6 @@ import { Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaRegHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import './index.scss';
@@ -32,7 +31,7 @@ const Header = () => {
               Contact Us<span className="nav-divider"></span>
             </Nav.Link>
             <Link to="/donate" className="yellow-button">
-              Donate <FaRegHeart className="heart-icon" />
+              Donate <img src="./images/black-heart-drop.svg" />
             </Link>
           </Nav>
         </Navbar.Collapse>
