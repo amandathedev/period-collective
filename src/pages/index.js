@@ -18,8 +18,8 @@ const LandingPage = () => {
       <WhoWeAre />
       {/* <HowWeWork />
       <LandingQuote />
-      <LandingNews />
-      <Footer /> */}
+      <LandingNews /> */}
+      <Footer />
     </div>
   );
 };
