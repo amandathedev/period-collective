@@ -1,0 +1,44 @@
+@import "../../scss/global.scss";
+
+.consider-donating {
+  background-color: $lightCoral;
+  padding: 72px;
+  text-align: center;
+  margin: 1rem 0;
+
+  @media (max-width: $mobile) {
+    padding: 32px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 58px;
+
+    @media (max-width: $mobile) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-style: italic;
+
+    @media (max-width: $mobile) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .yellow-button {
+    margin: 0 auto;
+  }
+}

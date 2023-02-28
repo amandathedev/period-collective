@@ -1,7 +1,7 @@
 @import "../../scss/global.scss";
 
 .page-name {
-  padding: 48px 64px;
+  padding: 36px 64px;
   background-color: $primaryCoral;
 
   @media (max-width: $mobile) {
@@ -14,7 +14,7 @@
     font-family: "Staatliches", sans-serif;
     text-align: left;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 100px;
     letter-spacing: 0.1rem;
 
