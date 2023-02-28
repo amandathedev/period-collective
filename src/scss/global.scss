@@ -31,7 +31,7 @@ $desktop: 1023px; // min
   border-radius: 0;
   cursor: pointer;
   font-weight: 900;
-  font-size: 1.3vw;
+  font-size: 1.6vw;
   line-height: 29px;
   text-align: center;
   align-items: center;
@@ -71,7 +71,8 @@ $desktop: 1023px; // min
   @media (max-width: $mobile) {
     height: 3rem;
     font-size: 14px;
-    max-width: 8rem;
+    max-width: 16rem;
+    padding: 16px;
   }
 
   @media (min-width: $mobile) and (max-width: $desktop) {
@@ -79,6 +80,7 @@ $desktop: 1023px; // min
     height: 56px;
     display: flex;
     font-size: 18px;
+    padding: 32px;
   }
 }
 
