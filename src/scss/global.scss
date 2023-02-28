@@ -111,6 +111,11 @@ $desktop: 1023px; // min
 .site-wrap {
   margin: 8vh auto 0;
   padding: 0 32px;
+
+  @media (max-width: $mobile) {
+    margin: 8vh auto 0;
+    padding: 0;
+  }
 }
 
 .d-flex {

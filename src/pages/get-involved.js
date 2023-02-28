@@ -6,11 +6,13 @@ import PageNameHeader from '../components/PageNameHeader';
 
 const GetInvolvedPage = () => {
   return (
-    <div className="site-wrap">
-      <Header />
-      <PageNameHeader pageName="Get Involved" />
+    <>
+      <div className="site-wrap">
+        <Header />
+        <PageNameHeader pageName="Get Involved" />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

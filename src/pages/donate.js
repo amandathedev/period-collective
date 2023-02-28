@@ -6,11 +6,13 @@ import PageNameHeader from '../components/PageNameHeader';
 
 const DonatePage = () => {
   return (
-    <div className="site-wrap">
-      <Header />
-      <PageNameHeader pageName="Donate" />
+    <>
+      <div className="site-wrap">
+        <Header />
+        <PageNameHeader pageName="Donate" />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

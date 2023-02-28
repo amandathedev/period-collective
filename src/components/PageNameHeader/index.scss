@@ -1,7 +1,7 @@
 @import "../../scss/global.scss";
 
 .page-name {
-  padding: 48px 32px 64px;
+  padding: 48px 64px;
   background-color: $primaryCoral;
 
   @media (max-width: $mobile) {
@@ -9,12 +9,14 @@
   }
 
   h1 {
-    font-size: 40px;
     line-height: 48px;
-    font-weight: 800;
     margin: 0;
-    padding: 0 0 24px 0;
+    font-family: "Staatliches", sans-serif;
     text-align: left;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 0.1rem;
 
     @media (max-width: $mobile) {
       text-align: center;

@@ -6,11 +6,13 @@ import PageNameHeader from '../components/PageNameHeader';
 
 const AboutPage = () => {
   return (
-    <div className="site-wrap">
-      <Header />
-      <PageNameHeader pageName="About" />
+    <>
+      <div className="site-wrap">
+        <Header />
+        <PageNameHeader pageName="About" />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
