@@ -7,7 +7,7 @@ const HowWeWork = () => {
   return (
     <div className="site-container how-we-work">
       <h2 className="main-h2">How we work</h2>
-      <div className="d-flex flex-row row">
+      <div className="d-flex row">
         <div className="d-flex flex-column column">
           <div className="image-header-wrapper">
             <img src="./images/one-big.png" className="circle" />
