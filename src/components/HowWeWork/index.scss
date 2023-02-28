@@ -6,6 +6,10 @@
 
   h2 {
     padding-top: 64px;
+
+    @media (max-width: $mobile) {
+      padding-top: 32px;
+    }
   }
 
   .image-header-wrapper {
