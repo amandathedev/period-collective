@@ -5,7 +5,7 @@ import './index.scss';
 
 const LandingNews = () => {
   return (
-    <div className="site-container landing-news">
+    <div className="site-wrap landing-news">
       <div className="header-container d-flex">
         <h2 className="main-h2 landing-header">News & Events</h2>
         <Link to="/news" className="link">

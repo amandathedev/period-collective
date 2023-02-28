@@ -1,1 +1,25 @@
 @import "../../scss/global.scss";
+
+.page-name {
+  padding: 48px 32px 64px;
+  background-color: $primaryCoral;
+
+  @media (max-width: $mobile) {
+    padding: 32px 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0 0 24px 0;
+    text-align: left;
+
+    @media (max-width: $mobile) {
+      text-align: center;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

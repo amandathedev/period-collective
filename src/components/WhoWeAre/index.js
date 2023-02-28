@@ -5,7 +5,7 @@ import './index.scss';
 
 const WhoWeAre = () => {
   return (
-    <div className="who-we-are site-container">
+    <div className="who-we-are site-wrap">
       <h2 className="main-h2">Who we are</h2>
       <div className="who-we-are-content">
         <Image src="./images/tpc.png" />

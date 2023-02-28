@@ -1,12 +1,15 @@
 import React from 'react';
 
+import Footer from '../components/Footer';
 import Header from '../components/Header';
+import PageNameHeader from '../components/PageNameHeader';
 
 const GetInvolvedPage = () => {
   return (
-    <div>
+    <div className="site-wrap">
       <Header />
-      <h1>get involved</h1>
+      <PageNameHeader pageName="Get Involved" />
+      <Footer />
     </div>
   );
 };
