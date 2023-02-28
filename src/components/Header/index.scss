@@ -28,12 +28,26 @@
     font-size: 18px;
     line-height: 28px;
 
+    @media (max-width: $mobile) {
+      background-color: white;
+      padding: 2rem;
+      border: 1px solid $primaryCoral;
+
+      .nav-link {
+        padding-bottom: 1rem;
+      }
+    }
+
     .nav-divider {
       color: $primaryCoral;
       margin: 0 0 0 1rem;
       font-weight: 900;
       font-size: 1.2rem;
       cursor: default;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
     }
   }
 }

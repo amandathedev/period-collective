@@ -76,7 +76,7 @@ $desktop: 1023px; // min
   }
 
   @media (min-width: $mobile) and (max-width: $desktop) {
-    width: 300px;
+    width: 30vw;
     height: 56px;
     display: flex;
     font-size: 18px;

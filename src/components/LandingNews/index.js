@@ -6,13 +6,13 @@ import './index.scss';
 const LandingNews = () => {
   return (
     <div className="site-container landing-news">
-      <div className="header-container d-flex flex-row">
+      <div className="header-container d-flex">
         <h2 className="main-h2 landing-header">News & Events</h2>
         <Link to="/news" className="link">
           See All
         </Link>
       </div>
-      <div className="d-flex flex-row news-container">
+      <div className="d-flex news-container">
         <div className="d-flex flex-column news-card">
           <img src="./images/news1.png" />
           <a
