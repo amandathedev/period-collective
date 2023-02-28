@@ -1,13 +1,18 @@
 import React from 'react';
 
+import Footer from '../components/Footer';
 import Header from '../components/Header';
+import PageNameHeader from '../components/PageNameHeader';
 
 const NewsPage = () => {
   return (
-    <div>
-      <Header />
-      <h1>news</h1>
-    </div>
+    <>
+      <div className="site-wrap">
+        <Header />
+        <PageNameHeader pageName="News & Events" />
+      </div>
+      <Footer />
+    </>
   );
 };
 

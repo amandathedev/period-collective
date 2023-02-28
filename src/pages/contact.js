@@ -1,13 +1,18 @@
 import React from 'react';
 
+import Footer from '../components/Footer';
 import Header from '../components/Header';
+import PageNameHeader from '../components/PageNameHeader';
 
 const ContactPage = () => {
   return (
-    <div>
-      <Header />
-      <h1>contact</h1>
-    </div>
+    <>
+      <div className="site-wrap">
+        <Header />
+        <PageNameHeader pageName="Contact Us" />
+      </div>
+      <Footer />
+    </>
   );
 };
 

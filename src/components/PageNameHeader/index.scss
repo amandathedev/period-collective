@@ -1,1 +1,27 @@
 @import "../../scss/global.scss";
+
+.page-name {
+  padding: 48px 64px;
+  background-color: $primaryCoral;
+
+  @media (max-width: $mobile) {
+    padding: 16px;
+  }
+
+  h1 {
+    line-height: 48px;
+    margin: 0;
+    font-family: "Staatliches", sans-serif;
+    text-align: left;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 0.1rem;
+
+    @media (max-width: $mobile) {
+      text-align: center;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

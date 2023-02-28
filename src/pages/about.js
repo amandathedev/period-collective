@@ -1,15 +1,18 @@
 import React from 'react';
 
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PageNameHeader from '../components/PageNameHeader';
 
 const AboutPage = () => {
   return (
-    <div>
-      <Header />
-      <PageNameHeader />
-      <h1>about</h1>
-    </div>
+    <>
+      <div className="site-wrap">
+        <Header />
+        <PageNameHeader pageName="About" />
+      </div>
+      <Footer />
+    </>
   );
 };
 
