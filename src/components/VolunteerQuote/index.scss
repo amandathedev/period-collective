@@ -1,0 +1,61 @@
+@import "../../scss/global.scss";
+
+.volunteer-quote {
+  background-color: $crystal;
+  padding: 0 0 0 2vw;
+  margin: 16px 0;
+  text-align: left;
+  flex-direction: row;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 2.4vw;
+    width: 90%;
+    margin: 4rem auto 1rem;
+
+    @media (max-width: $mobile) {
+      font-size: 5vw;
+      line-height: 5.2vw;
+      width: 90%;
+      text-align: center;
+      margin: 2rem auto 1rem;
+    }
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 3rem;
+    font-style: italic;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (max-width: $mobile) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 2rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  img {
+    width: 30vw;
+
+    @media (min-width: $mobile) and (max-width: 1100px) {
+      width: 50vw;
+    }
+
+    @media (max-width: $mobile) {
+      width: 70vw;
+      margin: 0 auto 2rem;
+    }
+  }
+}

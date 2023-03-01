@@ -5,7 +5,7 @@ import './index.scss';
 
 const ConsiderDonating = () => {
   return (
-    <div className="site-wrap consider-donating">
+    <div className="consider-donating">
       <h2>Our number one need is funds. Consider donating today.</h2>
       <p>Just $35 can keep a menstruator supplied for an entire year.</p>
       <Link to="/donate" className="yellow-button">
