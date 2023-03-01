@@ -11,9 +11,7 @@ const VolunteerQuote = () => {
         </h2>
         <p>- Allison, Period party volunteer</p>
       </div>
-      {/* <div className="right"> */}
       <img src="./images/dolly.png" />
-      {/* </div> */}
     </div>
   );
 };
