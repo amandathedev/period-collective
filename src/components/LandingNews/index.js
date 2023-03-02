@@ -8,9 +8,10 @@ const LandingNews = () => {
     <div className="site-wrap landing-news">
       <div className="header-container d-flex">
         <h2 className="main-h2 landing-header">News & Events</h2>
-        <Link to="/news" className="link">
+        {/* TODO Add after MVP */}
+        {/* <Link to="/news" className="link">
           See All
-        </Link>
+        </Link> */}
       </div>
       <div className="d-flex news-container">
         <div className="d-flex flex-column news-card">

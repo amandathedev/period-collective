@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 const WhoWeAre = () => {
@@ -11,11 +12,17 @@ const WhoWeAre = () => {
         <Image src="./images/tpc.png" />
         <p>
           The Period Collective is a 501(3)c Nonprofit in Chicago that provides
-          period products to local charity centers to help provide dignity to
-          all Chicagoans.
+          period products to local shelters, transitional housing facilities,
+          prisons, schools, and food banks to help provide dignity to all
+          Chicagoans. <br></br> <br></br> We are a grassroots organization that
+          is run entirely by volunteers.
+          {/* We are a community of people who
+          believe that no one should have to go without period products. */}
         </p>
       </div>
-      <button className="blue-button">Learn more</button>
+      <Link className="blue-button" to="/about">
+        Learn more
+      </Link>
     </div>
   );
 };

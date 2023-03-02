@@ -24,9 +24,10 @@ const Header = () => {
             <Nav.Link href="get-involved">
               Get Involved<span className="nav-divider">|</span>
             </Nav.Link>
-            <Nav.Link href="news">
+            {/* TODO add after MVP */}
+            {/* <Nav.Link href="news">
               News & Events<span className="nav-divider">|</span>
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link href="contact">
               Contact Us<span className="nav-divider"></span>
             </Nav.Link>

@@ -75,7 +75,8 @@ const WaysToHelp = () => {
             </a>
           </div>
         </div>
-        <div className="help-group">
+        {/* TODO Add after MVP */}
+        {/* <div className="help-group">
           <div className="ways-to-help-content-item">
             <img
               src="./images/contact-legislators.png"
@@ -105,7 +106,7 @@ const WaysToHelp = () => {
               Share on Social Media
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
