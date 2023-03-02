@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ConsiderDonating from '../components/ConsiderDonating';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PageNameHeader from '../components/PageNameHeader';
@@ -11,6 +12,7 @@ const DonateSuppliesPage = () => {
         <Header />
         <PageNameHeader pageName="Donate Supplies" />
       </div>
+      <ConsiderDonating />
       <Footer />
     </>
   );
