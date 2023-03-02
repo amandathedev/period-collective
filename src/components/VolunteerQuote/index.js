@@ -6,8 +6,9 @@ const VolunteerQuote = () => {
     <div className="volunteer-quote d-flex">
       <div>
         <h2>
-          “Volunteering with The Period Collective has been a great experience.
-          It&apos;s great to know we&apos;re making a difference”
+          “It is shocking that women are struggling with period poverty so close
+          to home. It is great knowing that my volunteering will make a
+          difference in my community.”
         </h2>
         <p>- Allison, period party volunteer</p>
       </div>

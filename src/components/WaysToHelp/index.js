@@ -21,7 +21,9 @@ const WaysToHelp = () => {
               . Or sew period kit bags and we&apos;ll use them to distribute
               period products with dignity.
             </p>
-            <button className="blue-button">Donate Supplies</button>
+            <a className="blue-button" href="/">
+              Donate Supplies
+            </a>
           </div>
           <div className="ways-to-help-content-item">
             <img src="./images/donate-funds.png" />
@@ -30,7 +32,9 @@ const WaysToHelp = () => {
               Help us buy period products in bulk and get them to people in
               need.
             </p>
-            <button className="blue-button">Donate Funds</button>
+            <a className="blue-button" href="/">
+              Donate Funds
+            </a>
           </div>
         </div>
         <div className="help-group">
@@ -42,7 +46,9 @@ const WaysToHelp = () => {
               Graphic designer? Fill out our form and we&apos;ll contact you
               with volunteer opportunities.
             </p>
-            <button className="blue-button">Volunteer Signup</button>
+            <a className="blue-button" href="/">
+              Volunteer Signup
+            </a>
           </div>
           <div className="ways-to-help-content-item">
             <img src="./images/packing-party.png" />
@@ -51,7 +57,9 @@ const WaysToHelp = () => {
               Have a group ready to make some kits? Host a packing party using
               our <a>instructions</a>!
             </p>
-            <button className="blue-button">Packing Party Information</button>
+            <a className="blue-button" href="/">
+              Packing Party Information
+            </a>
           </div>
         </div>
         <div className="help-group">
@@ -63,7 +71,9 @@ const WaysToHelp = () => {
               representatives and let them know that period equity is important
               to you.
             </p>
-            <button className="blue-button">Contact Legislators</button>
+            <a className="blue-button" href="/">
+              Contact Legislators
+            </a>
           </div>
           <div className="ways-to-help-content-item">
             <img src="./images/spread-the-word.png" />
@@ -72,7 +82,9 @@ const WaysToHelp = () => {
               Tell your friends, family, and coworkers about us! Share our
               social media and website.
             </p>
-            <button className="blue-button">Share on Social Media</button>
+            <a className="blue-button" href="/">
+              Share on Social Media
+            </a>
           </div>
         </div>
       </div>
