@@ -209,12 +209,20 @@ $desktop: 1023px; // min
 
 // Text
 .main-h2 {
-  font-family: "Staatliches";
+  font-family: "Staatliches", sans-serif;
   font-size: 48px;
   line-height: 60px;
   text-align: center;
   letter-spacing: -0.1rem;
   margin-bottom: 32px;
+}
+
+.main-h3 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .link {

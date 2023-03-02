@@ -15,8 +15,8 @@ const GetInvolvedPage = () => {
         <PageNameHeader pageName="Get Involved" />
         <VolunteerQuote />
         <WaysToHelp />
-        <ConsiderDonating />
       </div>
+      <ConsiderDonating />
       <Footer />
     </>
   );

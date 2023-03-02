@@ -11,8 +11,8 @@ import DonatePage from './pages/donate';
 import DonateSuppliesPage from './pages/donate-supplies';
 import GetInvolvedPage from './pages/get-involved';
 import NewsPage from './pages/news';
+import PackingPartyPage from './pages/packing-party';
 import PartnersPage from './pages/partners';
-import PrepareKitsPage from './pages/prepare-kits';
 import SharePage from './pages/share';
 import VolunteerSignupPage from './pages/volunteer-signup';
 import reportWebVitals from './reportWebVitals';
@@ -32,7 +32,7 @@ root.render(
       <Route path="donate" element={<DonatePage />} />
       <Route path="donate-supplies" element={<DonateSuppliesPage />} />
       <Route path="volunteer-signup" element={<VolunteerSignupPage />} />
-      <Route path="prepare-kits" element={<PrepareKitsPage />} />
+      <Route path="packing-party" element={<PackingPartyPage />} />
       <Route path="contact-legislators" element={<ContactLegislatorsPage />} />
       <Route path="spread-the-word" element={<SharePage />} />
     </Routes>

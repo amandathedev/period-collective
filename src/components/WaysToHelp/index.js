@@ -66,12 +66,18 @@ const WaysToHelp = () => {
             />
             <h3>Prepare Kits</h3>
             <p>
-              Have a group ready to make some kits? Host a packing party using
-              our <a>instructions</a>! Or sew period kit bags at home and
-              we&apos;ll use them to distribute period products with dignity.
+              Have a group ready to make some kits? Host a packing party! Or sew
+              period kit bags at home and we&apos;ll use them to distribute
+              period products with dignity.{' '}
+              <a
+                href="https://www.purlsoho.com/create/2009/03/15/easy-drawstring-bag/"
+                className="link"
+              >
+                See some great sewing instructions here.
+              </a>
             </p>
-            <a className="blue-button" href="/prepare-kits">
-              Packing Party & Sewing Information
+            <a className="blue-button" href="/packing-party">
+              Packing Party Information
             </a>
           </div>
         </div>
