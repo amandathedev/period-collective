@@ -9,7 +9,7 @@ const WaysToHelp = () => {
         <div className="help-group">
           <div className="ways-to-help-content-item">
             <img src="./images/donate-supplies.png" />
-            <h3>Donate</h3>
+            <h3>Donate Supplies</h3>
             <p>
               Donate period products, run a period supply drive, or order off of{' '}
               <a
@@ -18,10 +18,9 @@ const WaysToHelp = () => {
               >
                 our Amazon Wishlist
               </a>
-              . Or sew period kit bags and we&apos;ll use them to distribute
-              period products with dignity.
+              .
             </p>
-            <a className="blue-button" href="/">
+            <a className="blue-button" href="/donate-supplies">
               Donate Supplies
             </a>
           </div>
@@ -32,7 +31,7 @@ const WaysToHelp = () => {
               Help us buy period products in bulk and get them to people in
               need.
             </p>
-            <a className="blue-button" href="/">
+            <a className="blue-button" href="/donate">
               Donate Funds
             </a>
           </div>
@@ -46,19 +45,20 @@ const WaysToHelp = () => {
               Graphic designer? Fill out our form and we&apos;ll contact you
               with volunteer opportunities.
             </p>
-            <a className="blue-button" href="/">
+            <a className="blue-button" href="/volunteer-signup">
               Volunteer Signup
             </a>
           </div>
           <div className="ways-to-help-content-item">
             <img src="./images/packing-party.png" />
-            <h3>Host a Packing Party</h3>
+            <h3>Prepare Kits</h3>
             <p>
               Have a group ready to make some kits? Host a packing party using
-              our <a>instructions</a>!
+              our <a>instructions</a>! Or sew period kit bags at home and
+              we&apos;ll use them to distribute period products with dignity.
             </p>
-            <a className="blue-button" href="/">
-              Packing Party Information
+            <a className="blue-button" href="/prepare-kits">
+              Packing Party & Sewing Information
             </a>
           </div>
         </div>
@@ -71,7 +71,7 @@ const WaysToHelp = () => {
               representatives and let them know that period equity is important
               to you.
             </p>
-            <a className="blue-button" href="/">
+            <a className="blue-button" href="/contact-legislators">
               Contact Legislators
             </a>
           </div>
@@ -82,7 +82,7 @@ const WaysToHelp = () => {
               Tell your friends, family, and coworkers about us! Share our
               social media and website.
             </p>
-            <a className="blue-button" href="/">
+            <a className="blue-button" href="/spread-the-word">
               Share on Social Media
             </a>
           </div>

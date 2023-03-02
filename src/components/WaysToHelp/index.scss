@@ -34,7 +34,8 @@
 
       @media (min-width: $mobile) and (max-width: $desktop) {
         .blue-button {
-          padding: 3rem;
+          padding: 4rem 3rem;
+          font-size: 1.1rem;
         }
       }
 
