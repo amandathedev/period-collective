@@ -4,11 +4,7 @@
   background-color: $lightCoral;
   padding: 72px;
   text-align: center;
-  margin: 16px 0;
-
-  @media (min-width: $mobile) and (max-width: $desktop) {
-    margin: 16px 32px;
-  }
+  margin: 16px 32px;
 
   @media (max-width: $mobile) {
     padding: 32px;

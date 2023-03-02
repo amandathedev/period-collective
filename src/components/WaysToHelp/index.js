@@ -50,9 +50,10 @@ const WaysToHelp = () => {
             />
             <h3>Volunteer Time & Skills</h3>
             <p>
-              Help us deliver, run events, and get it all done! Videographer?
-              Graphic designer? Fill out our form and we&apos;ll contact you
-              with volunteer opportunities.
+              Help us deliver, run events, and get it all done! Or are you a
+              videographer, graphic designer, or have another skill you can
+              contribute? Fill out our form and we&apos;ll contact you with
+              volunteer opportunities.
             </p>
             <a className="blue-button" href="/volunteer-signup">
               Volunteer Signup

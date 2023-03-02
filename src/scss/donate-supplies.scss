@@ -1,0 +1,128 @@
+@import "./global.scss";
+
+.amazon-callout {
+  background-color: $crystal;
+  padding: 72px;
+  text-align: center;
+  margin: 16px 0;
+
+  @media (max-width: $mobile) {
+    padding: 32px;
+    margin: 16px 0;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 58px;
+
+    @media (max-width: $mobile) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-style: italic;
+
+    @media (max-width: $mobile) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .blue-button {
+    margin: 0 auto;
+  }
+}
+
+.shipping-callout {
+  margin: 4rem 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 2rem 1rem;
+  }
+}
+
+.donate-supplies-callout {
+  display: flex;
+  flex-direction: row;
+  background-color: $lightGray;
+  justify-content: space-between;
+
+  .left {
+    width: 60vw;
+    padding: 5rem 7rem;
+
+    h2 {
+      font-size: 2.4vw;
+      font-weight: bold;
+    }
+
+    ul {
+      font-size: 1.2vw;
+    }
+  }
+
+  img {
+    width: 40vw;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+
+    .left {
+      width: 100vw;
+      padding: 2rem 1rem;
+
+      h2 {
+        font-size: 7vw;
+      }
+
+      ul {
+        font-size: 4vw;
+      }
+    }
+
+    img {
+      width: 100vw;
+    }
+  }
+
+  @media (min-width: $mobile) and (max-width: $desktop) {
+    .left {
+      width: 80vw;
+      padding: 1rem 2rem;
+
+      h2 {
+        font-size: 4vw;
+      }
+
+      ul {
+        font-size: 2vw;
+      }
+    }
+
+    img {
+      width: 50vw;
+    }
+  }
+}
