@@ -15,7 +15,7 @@ const Header = () => {
         <Navbar.Brand href="/">
           <Image src="./images/tpc.png" className="nav-logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="site-header" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="nav-links">
           <Nav>
             <Nav.Link href="about">

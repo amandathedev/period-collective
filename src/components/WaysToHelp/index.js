@@ -8,7 +8,10 @@ const WaysToHelp = () => {
       <div className="ways-to-help-content">
         <div className="help-group">
           <div className="ways-to-help-content-item">
-            <img src="./images/donate-supplies.png" />
+            <img
+              src="./images/donate-supplies.png"
+              alt="pile of packages of period supplies"
+            />
             <h3>Donate Supplies</h3>
             <p>
               Donate period products, run a period supply drive, or order off of{' '}
@@ -25,7 +28,10 @@ const WaysToHelp = () => {
             </a>
           </div>
           <div className="ways-to-help-content-item">
-            <img src="./images/donate-funds.png" />
+            <img
+              src="./images/donate-funds.png"
+              alt="pallets of boxes of period supplies"
+            />
             <h3>Donate Funds</h3>
             <p>
               Help us buy period products in bulk and get them to people in
@@ -38,7 +44,10 @@ const WaysToHelp = () => {
         </div>
         <div className="help-group">
           <div className="ways-to-help-content-item">
-            <img src="./images/volunteer.png" />
+            <img
+              src="./images/volunteer.png"
+              alt="two volunteers carrying boxes of period product donations"
+            />
             <h3>Volunteer Time & Skills</h3>
             <p>
               Help us deliver, run events, and get it all done! Videographer?
@@ -50,7 +59,10 @@ const WaysToHelp = () => {
             </a>
           </div>
           <div className="ways-to-help-content-item">
-            <img src="./images/packing-party.png" />
+            <img
+              src="./images/packing-party.png"
+              alt="people in an office packaging kits of period supplies"
+            />
             <h3>Prepare Kits</h3>
             <p>
               Have a group ready to make some kits? Host a packing party using
@@ -64,7 +76,10 @@ const WaysToHelp = () => {
         </div>
         <div className="help-group">
           <div className="ways-to-help-content-item">
-            <img src="./images/contact-legislators.png" />
+            <img
+              src="./images/contact-legislators.png"
+              alt="period poverty slideshow presentation"
+            />
             <h3>Make Your Voice Heard</h3>
             <p>
               Help us advocate for period equity! Contact your local
@@ -76,7 +91,10 @@ const WaysToHelp = () => {
             </a>
           </div>
           <div className="ways-to-help-content-item">
-            <img src="./images/spread-the-word.png" />
+            <img
+              src="./images/spread-the-word.png"
+              alt="table of packaged period kits"
+            />
             <h3>Spread the Word</h3>
             <p>
               Tell your friends, family, and coworkers about us! Share our
