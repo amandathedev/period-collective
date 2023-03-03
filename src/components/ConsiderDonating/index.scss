@@ -25,6 +25,19 @@
     }
   }
 
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+
+    a {
+      margin: 0 auto 2rem;
+    }
+  }
+
   p {
     font-size: 22px;
     line-height: 24px;
