@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import ConsiderDonating from '../components/ConsiderDonating';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -21,9 +19,14 @@ const DonateSuppliesPage = () => {
           <p>
             Hassle free, ship directly to us, and we&apos;ll handle the rest!
           </p>
-          <Link to="/donate" className="white-button">
+          <a
+            href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+            target="_blank"
+            className="white-button"
+            rel="noreferrer"
+          >
             Let&apos;s do it
-          </Link>
+          </a>
         </div>
 
         <div className="shipping-callout">

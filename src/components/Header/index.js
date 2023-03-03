@@ -4,7 +4,6 @@ import { Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
 
 import './index.scss';
 
@@ -31,9 +30,14 @@ const Header = () => {
             <Nav.Link href="contact">
               Contact Us<span className="nav-divider"></span>
             </Nav.Link>
-            <Link to="/donate" className="yellow-button">
+            <a
+              href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+              target="_blank"
+              className="yellow-button"
+              rel="noreferrer"
+            >
               Donate <img src="./images/black-heart-drop.svg" />
-            </Link>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Container>

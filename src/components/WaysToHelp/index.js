@@ -37,8 +37,13 @@ const WaysToHelp = () => {
               Help us buy period products in bulk and get them to people in
               need.
             </p>
-            <a className="blue-button" href="/donate">
-              Donate Funds
+            <a
+              href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+              target="_blank"
+              className="blue-button"
+              rel="noreferrer"
+            >
+              Donate
             </a>
           </div>
         </div>
@@ -52,8 +57,7 @@ const WaysToHelp = () => {
             <p>
               Help us deliver donations, run events, and get it all done! Or are
               you a videographer, graphic designer, or have another skill you
-              can contribute? Fill out our form and we&apos;ll contact you with
-              volunteer opportunities.
+              can contribute? Join us!
             </p>
             <a className="blue-button" href="/volunteer-signup">
               Volunteer Signup

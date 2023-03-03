@@ -17,9 +17,14 @@ const HowWeWork = () => {
             We get period products from donors (regular people like you!) and
             purchase supplies in bulk with monetary donations.
           </p>
-          <Link className="blue-button" to="/donate">
-            See Donations
-          </Link>
+          <a
+            href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+            target="_blank"
+            className="blue-button"
+            rel="noreferrer"
+          >
+            See Where to Donate
+          </a>
         </div>
         <div className="d-flex flex-column column">
           <div className="image-header-wrapper">
