@@ -150,6 +150,13 @@ $desktop: 1023px; // min
   }
 }
 
+iframe {
+  width: 100%;
+  border: none;
+  margin: 2rem auto;
+  padding-top: 1rem;
+}
+
 .d-flex {
   display: flex;
 }
