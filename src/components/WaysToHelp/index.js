@@ -50,9 +50,9 @@ const WaysToHelp = () => {
             />
             <h3>Volunteer Time & Skills</h3>
             <p>
-              Help us deliver, run events, and get it all done! Or are you a
-              videographer, graphic designer, or have another skill you can
-              contribute? Fill out our form and we&apos;ll contact you with
+              Help us deliver donations, run events, and get it all done! Or are
+              you a videographer, graphic designer, or have another skill you
+              can contribute? Fill out our form and we&apos;ll contact you with
               volunteer opportunities.
             </p>
             <a className="blue-button" href="/volunteer-signup">
@@ -64,11 +64,11 @@ const WaysToHelp = () => {
               src="./images/packing-party.png"
               alt="people in an office packaging kits of period supplies"
             />
-            <h3>Prepare Kits</h3>
+            <h3>Prepare Bags</h3>
             <p>
-              Have a group ready to make some kits? Host a packing party! Or sew
-              period kit bags at home and we&apos;ll use them to distribute
-              period products with dignity.{' '}
+              Have a group ready to pack some bags? Host a packing party! Or sew
+              period bags at home and we&apos;ll use them to distribute period
+              products with dignity.{' '}
               <a
                 href="https://www.purlsoho.com/create/2009/03/15/easy-drawstring-bag/"
                 className="link"
@@ -88,7 +88,7 @@ const WaysToHelp = () => {
               src="./images/contact-legislators.png"
               alt="period poverty slideshow presentation"
             />
-            <h3>Make Your Voice Heard</h3>
+            <h3>Take a Stand</h3>
             <p>
               Help us advocate for period equity! Contact your local
               representatives and let them know that period equity is important

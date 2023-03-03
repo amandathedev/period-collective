@@ -51,8 +51,19 @@ const DonateSuppliesPage = () => {
               <li>Liners</li>
               <li>Wipes</li>
               <li>Incontinence products</li>
-              {/* TODO */}
-              <li>Bags for period kits (See DIY instructions to make bags)</li>
+              <li>Menstrual cups</li>
+              <li>Period underwear</li>
+              <li>Reusable pads</li>
+              <li>
+                Bags for period bags (
+                <a
+                  href="https://www.purlsoho.com/create/2009/03/15/easy-drawstring-bag/"
+                  className="link"
+                >
+                  See DIY instructions to make simple bags
+                </a>
+                )
+              </li>
               <li>Fabric and ribbon to make bags</li>
             </ul>
           </div>
