@@ -20,7 +20,7 @@ const DonateSuppliesPage = () => {
             Hassle free, ship directly to us, and we&apos;ll handle the rest!
           </p>
           <a
-            href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+            href="https://www.amazon.com/hz/wishlist/ls/1EVIC1E58SZ4G?ref=cm_sw_em_r_un_un_gkRzhGwD7pKrD"
             target="_blank"
             className="white-button"
             rel="noreferrer"
@@ -30,11 +30,11 @@ const DonateSuppliesPage = () => {
         </div>
 
         <div className="shipping-callout">
-          <h2>Ship unopened boxes of menstrual supplies directly to us</h2>
+          <h2>Ship individually-wrapped menstrual supplies directly to us</h2>
           <address>
             The Period Collective Donations<br></br>
-            PO Box 31401<br></br>
-            Chicago, IL 60631
+            4256 W. Diversey Ave.<br></br>
+            Chicago, IL 60639
           </address>
           <p>
             If you have products you&apos;d like to drop off, please contact us

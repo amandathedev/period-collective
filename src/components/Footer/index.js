@@ -10,7 +10,6 @@ const Footer = () => {
       <div className="footer-container">
         <div className="d-flex flex-column">
           <p className="footer-header org-name">The Period Collective</p>
-          <p>(312) 620-9959</p>
           <p>contact@theperiodcollective.org</p>
         </div>
         <div className="d-flex flex-column">
