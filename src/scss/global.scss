@@ -7,8 +7,10 @@ $primaryBlue: #00626c;
 $blueHover: #008693;
 $crystal: #b5d7d9;
 $primaryCoral: #ef887a;
+$lightCoral: #ffd8cc;
 $primaryYellow: #ffce07;
 $yellowHover: #ffeb9b;
+$lightGray: #f2f1ef;
 
 // Media queries
 $mobile: 767px; // max
@@ -31,13 +33,12 @@ $desktop: 1023px; // min
   border-radius: 0;
   cursor: pointer;
   font-weight: 900;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   line-height: 29px;
   text-align: center;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  max-width: 21vw;
   display: flex;
   width: 436px;
   height: 64px;
@@ -70,9 +71,9 @@ $desktop: 1023px; // min
 
   @media (max-width: $mobile) {
     height: 3rem;
-    font-size: 14px;
+    font-size: 18px;
     max-width: 16rem;
-    padding: 16px;
+    padding: 12px;
   }
 
   @media (min-width: $mobile) and (max-width: $desktop) {
@@ -82,12 +83,43 @@ $desktop: 1023px; // min
     font-size: 18px;
     padding: 32px;
   }
+
+  @media (min-width: 1100px) {
+    width: 20vw;
+    height: 56px;
+    display: flex;
+    font-size: 20px;
+    padding: 32px;
+  }
 }
 
 .yellow-button {
   @extend .blue-button;
   background-color: $primaryYellow;
   border: 4px solid black;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0.6rem 3rem;
+  color: black;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $yellowHover;
+    text-decoration: none;
+    color: black;
+    border: 4px solid black;
+  }
+
+  img {
+    width: 2rem;
+  }
+}
+
+.white-button {
+  @extend .blue-button;
+  background-color: white;
+  border: 2px solid black;
   font-size: 18px;
   line-height: 28px;
   padding: 0.6rem 3rem;
@@ -116,6 +148,13 @@ $desktop: 1023px; // min
     margin: 12vh auto 0;
     padding: 0;
   }
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  margin: 2rem auto;
+  padding-top: 1rem;
 }
 
 .d-flex {
@@ -159,6 +198,10 @@ $desktop: 1023px; // min
   margin-top: 4rem;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -175,9 +218,13 @@ $desktop: 1023px; // min
   margin-bottom: 4rem;
 }
 
+.center {
+  text-align: center;
+}
+
 // Text
 .main-h2 {
-  font-family: "Staatliches";
+  font-family: "Staatliches", sans-serif;
   font-size: 48px;
   line-height: 60px;
   text-align: center;
@@ -185,10 +232,17 @@ $desktop: 1023px; // min
   margin-bottom: 32px;
 }
 
+.main-h3 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
 .link {
   color: $primaryBlue;
   font-weight: 400;
-  font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-decoration: underline;

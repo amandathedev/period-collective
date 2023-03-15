@@ -25,13 +25,24 @@
   .nav-links {
     justify-content: right;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 28px;
+
+    .navbar-nav {
+      align-items: center;
+    }
 
     @media (max-width: $mobile) {
       background-color: white;
       padding: 2rem;
       border: 1px solid $primaryCoral;
+      font-size: 18px;
+      justify-content: left;
+
+      .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
       .nav-link {
         padding-bottom: 1rem;

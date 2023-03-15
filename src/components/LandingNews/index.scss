@@ -1,7 +1,7 @@
 @import "../../scss/global.scss";
 
 .site-wrap.landing-news {
-  padding: 48px 32px 64px;
+  padding: 0 32px 64px;
 
   .header-container {
     flex-direction: row;
@@ -41,6 +41,10 @@
     .news-card {
       text-align: center;
 
+      @media (min-width: $mobile) {
+        max-width: 30vw;
+      }
+
       @media (min-width: $desktop) {
         width: 24vw;
       }
@@ -48,6 +52,7 @@
       a {
         padding-top: 16px;
         text-decoration: none;
+        font-size: 18px;
 
         @media (max-width: $mobile) {
           padding: 24px 0;

@@ -1,0 +1,94 @@
+@import "../../scss/global.scss";
+
+.ways-to-help {
+  padding-top: 2rem;
+
+  .help-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 4rem;
+    width: 80%;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .ways-to-help-content-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+      position: relative;
+      width: 45vw;
+
+      @media (max-width: $mobile) {
+        width: 95vw;
+        margin-bottom: 2rem;
+      }
+
+      @media (min-width: $mobile) and (max-width: $desktop) {
+        .blue-button {
+          padding: 4rem 3rem;
+          font-size: 1.1rem;
+        }
+      }
+
+      img {
+        width: 100%;
+        max-width: 540px;
+        height: auto;
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 0.5rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        text-align: center;
+        z-index: 1;
+
+        @media (max-width: $mobile) {
+          top: 15%;
+          font-size: 1.5rem;
+          line-height: 1.2rem;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 2rem;
+
+        a {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        @media (max-width: $mobile) {
+          width: 95%;
+          font-size: 16px;
+
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

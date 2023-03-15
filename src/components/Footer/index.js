@@ -10,7 +10,6 @@ const Footer = () => {
       <div className="footer-container">
         <div className="d-flex flex-column">
           <p className="footer-header org-name">The Period Collective</p>
-          <p>(312) 620-9959</p>
           <p>contact@theperiodcollective.org</p>
         </div>
         <div className="d-flex flex-column">
@@ -21,13 +20,13 @@ const Footer = () => {
           <p className="mt-2">Stay Connected</p>
           <div className="d-flex flex-row space-evenly social-icons">
             <a href="https://www.facebook.com/Periodcoll">
-              <BsFacebook size={isMobile ? '1rem' : '3rem'} />
+              <BsFacebook size={isMobile ? '2rem' : '3rem'} />
             </a>
             <a href="https://www.instagram.com/periodcoll/">
-              <BsInstagram size={isMobile ? '1rem' : '3rem'} />
+              <BsInstagram size={isMobile ? '2rem' : '3rem'} />
             </a>
             <a href="https://www.linkedin.com/company/the-period-collective/">
-              <BsLinkedin size={isMobile ? '1rem' : '3rem'} />
+              <BsLinkedin size={isMobile ? '2rem' : '3rem'} />
             </a>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
 import './index.scss';
 
 const LandingQuote = () => {
@@ -17,9 +16,14 @@ const LandingQuote = () => {
         </a>
       </p>
       <h4>We believe everyone has the right to dignity.</h4>
-      <Link className="yellow-button" to="/donate">
+      <a
+        href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+        target="_blank"
+        className="yellow-button"
+        rel="noreferrer"
+      >
         Donate <img src="./images/black-heart-drop.svg" />
-      </Link>
+      </a>
     </div>
   );
 };

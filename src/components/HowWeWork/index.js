@@ -13,17 +13,28 @@ const HowWeWork = () => {
             <img src="./images/one-big.png" className="circle" />
             <h3>ONE</h3>
           </div>
-          <p>We get period products from donors (regular people like you)!</p>
-          <Link className="blue-button" to="/donate">
-            See Donations
-          </Link>
+          <p>
+            We get period products from donors (regular people like you!) and
+            purchase supplies in bulk with monetary donations.
+          </p>
+          <a
+            href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+            target="_blank"
+            className="blue-button"
+            rel="noreferrer"
+          >
+            See Where to Donate
+          </a>
         </div>
         <div className="d-flex flex-column column">
           <div className="image-header-wrapper">
             <img src="./images/two-big.png" className="circle" />
             <h3>TWO</h3>
           </div>
-          <p>Volunteers throw Period Parties to create kits.</p>
+          <p>
+            Volunteers create period kits so the supplies can be distributed
+            with dignity in mind.
+          </p>
           <Link className="blue-button" to="/get-involved">
             See Volunteering
           </Link>

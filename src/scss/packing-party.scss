@@ -1,0 +1,78 @@
+@import "./global.scss";
+
+.packing-parties {
+  h2 {
+    padding: 2rem 0 0;
+  }
+
+  .past-parties {
+    background-color: $lightGray;
+    padding: 4rem 1rem 2rem;
+
+    @media (max-width: $mobile) {
+      padding: 2rem 1rem;
+    }
+
+    .photo-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 0 auto 3rem;
+      width: 100%;
+
+      @media (max-width: $mobile) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .photo {
+        width: 30%;
+        margin: 1rem 0;
+
+        @media (max-width: $mobile) {
+          width: 80%;
+        }
+      }
+    }
+
+    ~ .main-h3 {
+      margin-top: 2rem;
+
+      @media (max-width: $mobile) {
+        margin-top: 1rem;
+      }
+    }
+
+    ~ ol {
+      margin: 0 auto 5rem;
+      width: 70%;
+
+      @media (max-width: $mobile) {
+        width: 90%;
+        margin: 0 auto 3rem;
+      }
+
+      li {
+        margin-bottom: 1rem;
+        font-size: 18px;
+
+        @media (max-width: $mobile) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 3rem;
+
+    @media (max-width: $mobile) {
+      width: 90%;
+    }
+  }
+}
