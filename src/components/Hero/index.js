@@ -20,10 +20,10 @@ const Hero = () => {
             <br />
             <span>FOR ALL IN</span> CHICAGO<span className="period">.</span>
           </h1>
+          <Link className="blue-button" to="/get-involved">
+            Get Involved
+          </Link>
         </div>
-        <Link className="blue-button" to="/get-involved">
-          Get Involved
-        </Link>
       </div>
     </>
   );

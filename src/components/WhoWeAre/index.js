@@ -13,11 +13,9 @@ const WhoWeAre = () => {
         <p>
           The Period Collective is a 501(3)c Nonprofit in Chicago that provides
           period products to local shelters, transitional housing facilities,
-          prisons, schools, and food banks to help provide dignity to all
-          Chicagoans. <br></br> <br></br> We are a grassroots organization that
-          is run entirely by volunteers.
-          {/* We are a community of people who
-          believe that no one should have to go without period products. */}
+          schools, and food banks to help provide dignity to all Chicagoans.{' '}
+          <br></br> <br></br> We are a grassroots organization that is run
+          entirely by volunteers.
         </p>
       </div>
       <Link className="blue-button" to="/about">
