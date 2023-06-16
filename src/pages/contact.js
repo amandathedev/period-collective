@@ -6,10 +6,12 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PageNameHeader from '../components/PageNameHeader';
 
+import '../scss/contact.scss';
+
 const ContactPage = () => {
   return (
     <>
-      <div className="site-wrap">
+      <div className="site-wrap contact-page">
         <Header />
         <PageNameHeader pageName="Contact Us" />
         <div className="donate-supplies-callout mt-3">
@@ -44,15 +46,24 @@ const ContactPage = () => {
           to learn more about how we can work together.
         </p>
         <h3 className="main-h3 mt-4 mb-0">
+          Interested in volunteering with us?
+        </h3>
+        <p className="center">
+          Please visit our{' '}
+          <a href="/volunteer-signup" className="link">
+            volunteer signup page
+          </a>{' '}
+          to learn sign up for our volunteer newsletter.
+        </p>
+        <h3 className="main-h3 mt-4 mb-0">
           Do you have a question or comment for us?
         </h3>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScrsJKF-0nii6v2FZPPYweKSj3C5pKxPGiIPa4595WL6Djkdw/viewform?embedded=true"
-          width="1220"
-          height="729"
-        >
-          Loading…
-        </iframe>
+        <p className="center contact-us">
+          Please reach out to us at{' '}
+          <a href="mailto:contact@theperiodcollective.org" className="link">
+            contact@theperiodcollective.org
+          </a>
+        </p>
       </div>
       <Footer />
     </>
