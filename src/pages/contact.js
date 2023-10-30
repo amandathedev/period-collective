@@ -16,7 +16,7 @@ const ContactPage = () => {
         <PageNameHeader pageName="Contact Us" />
         <div className="donate-supplies-callout mt-3">
           <div className="left">
-            <h2>Our Mailing Address</h2>
+            <h2>Our Warehouse Address</h2>
             <address>
               The Period Collective Donations<br></br>
               4256 W Diversey Ave<br></br>
