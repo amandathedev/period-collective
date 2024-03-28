@@ -30,15 +30,9 @@ const DonateSuppliesPage = () => {
         </div>
 
         <div className="shipping-callout">
-          <h2>Ship individually-wrapped menstrual supplies directly to us</h2>
-          <address>
-            The Period Collective Donations<br></br>
-            4256 W. Diversey Ave.<br></br>
-            Chicago, IL 60639
-          </address>
           <p>
-            If you have products you&apos;d like to drop off, please contact us
-            at{' '}
+            If you have products you&apos;d like to drop off or ship to us,
+            please contact us at{' '}
             <a href="mailto:contact@theperiodcollective.org" className="link">
               contact@theperiodcollective.org
             </a>
