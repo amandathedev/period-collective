@@ -21,7 +21,7 @@ const Hero = () => {
             <span>FOR ALL IN</span> CHICAGO<span className="period">.</span>
           </h1>
           <Link className="blue-button" to="/get-involved">
-            Get Involved
+            Join our mission
           </Link>
         </div>
       </div>
