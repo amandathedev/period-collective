@@ -26,6 +26,9 @@ const Header = () => {
             <Nav.Link href="contact">
               Contact Us<span className="nav-divider"></span>
             </Nav.Link>
+            {/*<Nav.Link href="blog">*/}
+            {/*  Blog<span className="nav-divider"></span>*/}
+            {/*</Nav.Link>*/}
             <a
               href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
               target="_blank"

@@ -46,11 +46,6 @@
       }
     }
 
-    .navbar-nav {
-      //align-items: flex-end;
-      //width: 30%;
-    }
-
     @media (max-width: $mobile) {
       background-color: white;
       padding: 2rem;
@@ -65,6 +60,12 @@
 
       .nav-link {
         padding-bottom: 1rem;
+      }
+    }
+
+    @media (max-width: 1120px) {
+      .nav-link {
+        font-size: 14px;
       }
     }
 
