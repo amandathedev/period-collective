@@ -1,4 +1,4 @@
-@import "../../scss/global.scss";
+@import '../../scss/global.scss';
 
 #site-header {
   height: 6rem;
@@ -25,11 +25,30 @@
   .nav-links {
     justify-content: right;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 28px;
 
+    @media (min-width: $mobile) {
+      &.show {
+        display: flex;
+        font-size: 20px;
+        width: 30%;
+
+        .nav-link {
+          background-color: white;
+          padding: 1rem 2rem;
+          border-bottom: 1px solid $primaryCoral;
+        }
+
+        .nav-divider {
+          display: none;
+        }
+      }
+    }
+
     .navbar-nav {
-      align-items: center;
+      //align-items: flex-end;
+      //width: 30%;
     }
 
     @media (max-width: $mobile) {

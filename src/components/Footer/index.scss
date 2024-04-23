@@ -1,10 +1,10 @@
-@import "../../scss/global.scss";
+@import '../../scss/global.scss';
 
 .footer {
   background-color: $primaryBlue;
   color: white;
   padding: 3.2vw 6vw;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 18px;
   width: 100%;
@@ -22,19 +22,19 @@
   }
 
   .footer-header {
-    font-family: "Staatliches", sans-serif;
+    font-family: 'Staatliches', sans-serif;
     letter-spacing: 0.2px;
     font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
 
     &.we-serve {
-      font-size: 2.6vw;
-      line-height: 2.8vw;
+      font-size: 1.6rem;
+      line-height: 1;
       font-weight: 400;
 
       img {
-        width: 3.2vw;
+        width: 1.6rem;
       }
     }
   }
@@ -42,6 +42,11 @@
   .social-icons {
     a {
       color: white;
+      margin-right: 1rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
 
       &:hover {
         color: $yellowHover;
@@ -53,7 +58,6 @@
     p {
       text-align: center;
       margin: 0 0 -0.2rem -1rem;
-      font-size: 1rem;
       font-size: 1.2rem;
 
       @media (max-width: $mobile) {

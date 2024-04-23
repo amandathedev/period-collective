@@ -14,7 +14,7 @@ const AboutPage = () => {
       <div className="site-wrap about-page">
         <Header />
         <PageNameHeader pageName="About" />
-        <h2 className="main-h2">Why do we do it?</h2>
+        <h2 className="main-h2">Why we do it</h2>
         <p>
           The Period Collective is an{' '}
           <strong>all-volunteer 501(c)(3) non-profit</strong> organization based

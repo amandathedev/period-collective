@@ -42,9 +42,14 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.1.1",
     "css-loader": "^6.7.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.0.0",
     "mini-css-extract-plugin": "^2.7.0",
     "node-sass": "^7.0.3",
+    "prettier": "^3.2.5",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1"
   }
