@@ -11,6 +11,13 @@ const Footer = () => {
         <div className="d-flex flex-column">
           <p className="footer-header org-name">The Period Collective</p>
           <p>contact@theperiodcollective.org</p>
+          <p>Chicago, IL</p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <p className="attribution">Website developed by Amanda Treutler</p>
         </div>
         <div className="d-flex flex-column">
           <p className="footer-header we-serve">
