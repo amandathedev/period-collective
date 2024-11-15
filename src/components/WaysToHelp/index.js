@@ -63,27 +63,27 @@ const WaysToHelp = () => {
               Volunteer Signup
             </a>
           </div>
-          <div className="ways-to-help-content-item">
-            <img
-              src="./images/packing-party.png"
-              alt="people in an office packaging kits of period supplies"
-            />
-            <h3>Prepare Bags</h3>
-            <p>
-              Have a group ready to pack some bags? Host a packing party! Or sew
-              period bags at home and we&apos;ll use them to distribute period
-              products with dignity.{' '}
-              <a
-                href="https://www.purlsoho.com/create/2009/03/15/easy-drawstring-bag/"
-                className="link"
-              >
-                See some great sewing instructions here.
-              </a>
-            </p>
-            <a className="blue-button" href="/packing-party">
-              Packing Party Information
-            </a>
-          </div>
+          {/*<div className="ways-to-help-content-item">*/}
+          {/*  <img*/}
+          {/*    src="./images/packing-party.png"*/}
+          {/*    alt="people in an office packaging kits of period supplies"*/}
+          {/*  />*/}
+          {/*  <h3>Prepare Bags</h3>*/}
+          {/*  <p>*/}
+          {/*    Have a group ready to pack some bags? Host a packing party! Or sew*/}
+          {/*    period bags at home and we&apos;ll use them to distribute period*/}
+          {/*    products with dignity.{' '}*/}
+          {/*    <a*/}
+          {/*      href="https://www.purlsoho.com/create/2009/03/15/easy-drawstring-bag/"*/}
+          {/*      className="link"*/}
+          {/*    >*/}
+          {/*      See some great sewing instructions here.*/}
+          {/*    </a>*/}
+          {/*  </p>*/}
+          {/*  <a className="blue-button" href="/packing-party">*/}
+          {/*    Packing Party Information*/}
+          {/*  </a>*/}
+          {/*</div>*/}
         </div>
         {/* TODO Add after MVP */}
         {/* <div className="help-group">
