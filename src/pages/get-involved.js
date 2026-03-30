@@ -10,12 +10,12 @@ import WaysToHelp from '../components/WaysToHelp';
 const GetInvolvedPage = () => {
   return (
     <>
-      <div className="site-wrap">
-        <Header />
+      <Header />
+      <main className="site-wrap">
         <PageNameHeader pageName="Get Involved" />
         <VolunteerQuote />
         <WaysToHelp />
-      </div>
+      </main>
       <ConsiderDonating />
       <Footer />
     </>

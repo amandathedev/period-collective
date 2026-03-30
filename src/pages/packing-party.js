@@ -26,8 +26,8 @@ const PackingPartyPage = () => {
   }, []);
   return (
     <>
-      <div className="site-wrap packing-parties">
-        <Header />
+      <Header />
+      <main className="site-wrap packing-parties">
         <PageNameHeader pageName="Packing Parties" />
         <div className="info">
           <h2 className="main-h2">What is it?</h2>
@@ -41,9 +41,9 @@ const PackingPartyPage = () => {
         <div className="past-parties">
           <h3 className="main-h3">Past packing parties</h3>
           <div className="d-flex photo-row">
-            <img src="./images/period-party1.png" className="photo" />
-            <img src="./images/period-party2.png" className="photo" />
-            <img src="./images/period-party3.png" className="photo" />
+            <img src="./images/period-party1.png" className="photo" alt="Volunteers at a packing party" />
+            <img src="./images/period-party2.png" className="photo" alt="Packing period supply kits" />
+            <img src="./images/period-party3.png" className="photo" alt="Completed period supply kits" />
           </div>
         </div>
         <h3 className="main-h3">How do I do it?</h3>
@@ -95,13 +95,14 @@ const PackingPartyPage = () => {
           . Please send us an email if you&apos;d like a downloadable copy.
         </p>
         <iframe
-          title="Canva Presentation"
+          title="Packing Party Presentation"
           ref={iframeRef}
           src="https://www.canva.com/design/DAFSPbwB0-o/z5ZKe64TQRuuRjxHPdNLkA/view?embed"
           width="60%"
           allowFullScreen
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts"
         ></iframe>
-      </div>
+      </main>
       <Footer />
     </>
   );

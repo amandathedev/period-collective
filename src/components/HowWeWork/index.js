@@ -1,34 +1,30 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
+
 import './index.scss';
 
 const HowWeWork = () => {
   return (
-    <div className="site-wrap how-we-work">
+    <section className="site-wrap how-we-work">
       <h2 className="main-h2">How we work</h2>
       <div className="d-flex row">
         <div className="d-flex flex-column column">
           <div className="image-header-wrapper">
-            <img src="./images/one-big.png" className="circle" />
+            <img src="./images/one-big.png" className="circle" alt="Step one" />
             <h3>ONE</h3>
           </div>
           <p>
             We get period products from donors (regular people like you!) and
             purchase supplies in bulk with monetary donations.
           </p>
-          <a
-            href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
-            target="_blank"
-            className="blue-button"
-            rel="noreferrer"
-          >
+          <Link className="blue-button" to="/donate">
             See Where to Donate
-          </a>
+          </Link>
         </div>
         <div className="d-flex flex-column column">
           <div className="image-header-wrapper">
-            <img src="./images/two-big.png" className="circle" />
+            <img src="./images/two-big.png" className="circle" alt="Step two" />
             <h3>TWO</h3>
           </div>
           <p>
@@ -41,7 +37,7 @@ const HowWeWork = () => {
         </div>
         <div className="d-flex flex-column column">
           <div className="image-header-wrapper">
-            <img src="./images/three-big.png" className="circle" />
+            <img src="./images/three-big.png" className="circle" alt="Step three" />
             <h3>THREE</h3>
           </div>
           <p>
@@ -53,7 +49,7 @@ const HowWeWork = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

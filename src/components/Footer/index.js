@@ -6,7 +6,7 @@ import './index.scss';
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-container">
         <div className="d-flex flex-column">
           <p className="footer-header org-name">The Period Collective</p>
@@ -21,28 +21,28 @@ const Footer = () => {
         </div>
         <div className="d-flex flex-column">
           <p className="footer-header we-serve">
-            We proudly serve<br></br> the Chicago Community
-            <img src="./images/white-heart-drop.svg" />
+            We proudly serve<br /> the Chicago Community
+            <img src="./images/white-heart-drop.svg" alt="" aria-hidden="true" />
           </p>
           <p className="mt-2">Stay Connected</p>
           <div className="d-flex flex-row space-evenly social-icons">
-            <a href="https://www.facebook.com/Periodcoll">
+            <a href="https://www.facebook.com/Periodcoll" aria-label="Facebook">
               <BsFacebook size={isMobile ? '2rem' : '3rem'} />
             </a>
-            <a href="https://www.instagram.com/periodcoll/">
+            <a href="https://www.instagram.com/periodcoll/" aria-label="Instagram">
               <BsInstagram size={isMobile ? '2rem' : '3rem'} />
             </a>
-            <a href="https://www.linkedin.com/company/the-period-collective/">
+            <a href="https://www.linkedin.com/company/the-period-collective/" aria-label="LinkedIn">
               <BsLinkedin size={isMobile ? '2rem' : '3rem'} />
             </a>
           </div>
         </div>
         <div className="d-flex flex-column affiliate">
           <p>Proud Affiliate of</p>
-          <img src="./images/alliance.svg" alt="alliance for period supplies" />
+          <img src="./images/alliance.svg" alt="Alliance for Period Supplies" />
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

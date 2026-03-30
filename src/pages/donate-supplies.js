@@ -4,23 +4,23 @@ import ConsiderDonating from '../components/ConsiderDonating';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PageNameHeader from '../components/PageNameHeader';
+import { AMAZON_WISHLIST_URL } from '../constants';
 
 import '../scss/donate-supplies.scss';
 
 const DonateSuppliesPage = () => {
   return (
     <>
-      <div className="site-wrap">
-        <Header />
+      <Header />
+      <main className="site-wrap">
         <PageNameHeader pageName="Donate Supplies" />
-        {/* TODO combine with consider donating, quotes into one reusable component */}
         <div className="amazon-callout">
           <h2>Order directly off of our Amazon Wishlist</h2>
           <p>
             Hassle free, ship directly to us, and we&apos;ll handle the rest!
           </p>
           <a
-            href="https://www.amazon.com/hz/wishlist/ls/1EVIC1E58SZ4G?ref=cm_sw_em_r_un_un_gkRzhGwD7pKrD"
+            href={AMAZON_WISHLIST_URL}
             target="_blank"
             className="white-button"
             rel="noreferrer"
@@ -65,10 +65,10 @@ const DonateSuppliesPage = () => {
             </ul>
           </div>
           <div>
-            <img src="./images/supplies.jpg" />
+            <img src="./images/supplies.jpg" alt="Period supplies ready for distribution" />
           </div>
         </div>
-      </div>
+      </main>
       <ConsiderDonating />
       <Footer />
     </>

@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import './index.scss';
 
 const LandingQuote = () => {
   return (
-    <div className="landing-quote">
+    <section className="landing-quote">
       <h3>
         There are more than 65,000 people experiencing houselessness in Chicago,
         40% of whom can menstruate.
@@ -16,15 +18,10 @@ const LandingQuote = () => {
         </a>
       </p>
       <h4>We believe everyone has the right to dignity.</h4>
-      <a
-        href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
-        target="_blank"
-        className="yellow-button"
-        rel="noreferrer"
-      >
-        Donate <img src="./images/black-heart-drop.svg" />
-      </a>
-    </div>
+      <Link className="yellow-button" to="/donate">
+        Donate <img src="./images/black-heart-drop.svg" alt="" aria-hidden="true" />
+      </Link>
+    </section>
   );
 };
 

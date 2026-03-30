@@ -11,8 +11,8 @@ import '../scss/contact.scss';
 const ContactPage = () => {
   return (
     <>
-      <div className="site-wrap contact-page">
-        <Header />
+      <Header />
+      <main className="site-wrap contact-page">
         <PageNameHeader pageName="Contact Us" />
         <div className="donate-supplies-callout mt-3">
           <div className="left">
@@ -32,9 +32,9 @@ const ContactPage = () => {
             </h3>
             <p className="center">
               Please visit our{' '}
-              <a href="/volunteer-signup" className="link">
+              <Link to="/volunteer-signup" className="link">
                 volunteer signup page
-              </a>{' '}
+              </Link>{' '}
               to learn sign up for our volunteer newsletter.
             </p>
             <h3 className="main-h3 mt-4 mb-0">
@@ -48,10 +48,10 @@ const ContactPage = () => {
             </p>
           </div>
           <div>
-            <img src="./images/supplies.jpg" />
+            <img src="./images/supplies.jpg" alt="Period supplies ready for distribution" />
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );

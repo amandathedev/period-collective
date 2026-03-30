@@ -4,15 +4,14 @@ import ConsiderDonating from '../components/ConsiderDonating';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HowWeWork from '../components/HowWeWork';
-import MeetTheTeam from '../components/MeetTheTeam';
 import PageNameHeader from '../components/PageNameHeader';
 import '../scss/about.scss';
 
 const AboutPage = () => {
   return (
     <>
-      <div className="site-wrap about-page">
-        <Header />
+      <Header />
+      <main className="site-wrap about-page">
         <PageNameHeader pageName="About" />
         <h2 className="main-h2">Why we do it</h2>
         <p>
@@ -21,15 +20,15 @@ const AboutPage = () => {
           in Chicago that is dedicated to promoting menstrual equity by ensuring
           that all individuals have access to menstrual products. We believe
           that menstrual equity is a basic human right, and we are committed to
-          doing everything in our power to make it a reality.<br></br>
-          <br></br> Since our inception, we have distributed{' '}
+          doing everything in our power to make it a reality.<br /><br />
+          Since our inception, we have distributed{' '}
           <strong>over two million menstrual products</strong> to social service
           organizations such as schools, food banks, and shelters. These
           organizations then distribute the menstrual products to people in
           need, providing them with the dignity and respect they deserve. Our
           mission is to create a world where everyone has access to menstrual
-          products, regardless of their income or living situation. <br></br>
-          <br></br>As an all-volunteer non-profit organization, we rely on the
+          products, regardless of their income or living situation. <br /><br />
+          As an all-volunteer non-profit organization, we rely on the
           generosity and dedication of our volunteers to make our work possible.
           By supporting The Period Collective through a donation or by
           volunteering your time,{' '}
@@ -42,8 +41,6 @@ const AboutPage = () => {
           who need it most.
         </p>
         <HowWeWork />
-        {/* TODO after MVP */}
-        {/* <MeetTheTeam /> */}
         <h2 className="main-h2">Who we help</h2>
         <div className="names-grid">
           <div>A Safe Haven Foundation</div>
@@ -96,7 +93,7 @@ const AboutPage = () => {
           <div>Youth Job Center</div>
           <div>YWCA Metropolitan Chicago</div>
         </div>
-      </div>
+      </main>
       <ConsiderDonating pageName="about" />
       <Footer />
     </>
