@@ -10,7 +10,7 @@ const ConsiderDonating = ({ pageName }) => {
   const donationLink = settings.donationLink || 'https://donate.stripe.com/28ocNSdyd0G0dgIaEE';
 
   return (
-    <div className="consider-donating">
+    <section className="consider-donating">
       {pageName === 'about' ? (
         <>
           <h2>We rely on donations and help from people like you.</h2>
@@ -44,7 +44,7 @@ const ConsiderDonating = ({ pageName }) => {
           </a>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

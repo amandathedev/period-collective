@@ -65,7 +65,6 @@ const ContactPage = () => {
             <div>
               <img src="./images/supplies.jpg" alt="Period supplies including pads, tampons, and liners" />
             </div>
-          </div>
 
           <h3 className="main-h3 mt-4">Send Us a Message</h3>
           <p className="form-intro">If you have a question or comment, please submit the form below and someone from The Period Collective will be in touch!</p>

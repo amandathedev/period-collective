@@ -22,7 +22,7 @@ const WhoWeAre = () => {
   const body2 = content.whoWeAreBody2 || 'We are a grassroots organization that is run entirely by volunteers.';
 
   return (
-    <div className="who-we-are site-wrap">
+    <section className="who-we-are site-wrap">
       <h2 className="main-h2">Who we are</h2>
       <div className="who-we-are-content">
         <Image src={logoSrc} alt="The Period Collective logo" />
@@ -32,7 +32,7 @@ const WhoWeAre = () => {
       <Link className="blue-button" to="/about">
         Learn more
       </Link>
-    </div>
+    </section>
   );
 };
 

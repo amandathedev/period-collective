@@ -43,7 +43,7 @@ const LandingNews = () => {
   const displayArticles = articles.length > 0 ? articles : FALLBACK_ARTICLES;
 
   return (
-    <div className="site-wrap landing-news">
+    <section className="site-wrap landing-news">
       <div className="header-container d-flex">
         <h2 className="main-h2 landing-header">News & Events</h2>
       </div>
@@ -57,7 +57,7 @@ const LandingNews = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

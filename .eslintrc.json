@@ -31,7 +31,7 @@
     ],
     "no-duplicate-imports": "error",
     "space-before-blocks": "warn",
-    "no-unused-vars": 0,
+    "no-unused-vars": "warn",
     "import/order": [
       "error",
       {

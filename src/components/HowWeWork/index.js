@@ -58,7 +58,7 @@ const HowWeWork = () => {
   const displaySteps = steps.length > 0 ? steps : fallbackSteps;
 
   return (
-    <div className="site-wrap how-we-work">
+    <section className="site-wrap how-we-work">
       <h2 className="main-h2">How we work</h2>
       <div className="d-flex row">
         {displaySteps.map((step, index) => {
@@ -90,7 +90,7 @@ const HowWeWork = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
