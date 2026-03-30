@@ -1,0 +1,35 @@
+@import "../../scss/forms.scss";
+
+.volunteer-form {
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 6px;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #333;
+    cursor: pointer;
+
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      accent-color: var(--primary-blue);
+      cursor: pointer;
+    }
+  }
+
+  .contact-me-label {
+    margin-top: 0.25rem;
+    font-weight: 700;
+  }
+}

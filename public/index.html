@@ -23,20 +23,45 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>The Period Collective</title>
-  <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
-
-  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
-
-  <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
-
-  <script>
-    var Alert = ReactBootstrap.Alert;
-  </script>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+
+  <!-- Netlify Forms detection — hidden static forms required for SPA -->
+  <form name="partner-form" netlify hidden>
+    <input type="text" name="organization-name" />
+    <input type="text" name="contact-name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="number" name="individuals-served" />
+    <input type="text" name="neighborhoods" />
+    <input type="number" name="products-per-quarter" />
+    <input type="text" name="street-address" />
+    <input type="text" name="address-line-2" />
+    <input type="text" name="city" />
+    <input type="text" name="state" />
+    <input type="text" name="zip" />
+    <input type="text" name="county" />
+    <textarea name="comments"></textarea>
+  </form>
+
+  <form name="volunteer-form" netlify hidden>
+    <input type="text" name="first-name" />
+    <input type="text" name="last-name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="text" name="location" />
+    <input type="text" name="how-to-help" />
+    <input type="text" name="contact-me" />
+  </form>
+
+  <form name="contact-form" netlify hidden>
+    <input type="email" name="email" />
+    <input type="text" name="name" />
+    <textarea name="message"></textarea>
+  </form>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

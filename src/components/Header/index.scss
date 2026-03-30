@@ -1,5 +1,21 @@
 @import '../../scss/global.scss';
 
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--primary-blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  z-index: 9999;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:focus {
+    top: 0;
+  }
+}
+
 #site-header {
   height: 6rem;
   background-color: white;
@@ -37,7 +53,7 @@
         .nav-link {
           background-color: white;
           padding: 1rem 2rem;
-          border-bottom: 1px solid $primaryCoral;
+          border-bottom: 1px solid var(--primary-coral);
         }
 
         .nav-divider {
@@ -49,7 +65,7 @@
     @media (max-width: $mobile) {
       background-color: white;
       padding: 2rem;
-      border: 1px solid $primaryCoral;
+      border: 1px solid var(--primary-coral);
       font-size: 18px;
       justify-content: left;
 
@@ -70,7 +86,7 @@
     }
 
     .nav-divider {
-      color: $primaryCoral;
+      color: var(--primary-coral);
       margin: 0 0 0 1rem;
       font-weight: 900;
       font-size: 1.2rem;

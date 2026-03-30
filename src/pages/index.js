@@ -12,15 +12,17 @@ import '../scss/index.scss';
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Hero />
-      <WhoWeAre />
-      <HowWeWork />
-      <LandingQuote />
-      <LandingNews />
+      <main id="main-content">
+        <Hero />
+        <WhoWeAre />
+        <HowWeWork />
+        <LandingQuote />
+        <LandingNews />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

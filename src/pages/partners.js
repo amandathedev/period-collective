@@ -3,21 +3,20 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PageNameHeader from '../components/PageNameHeader';
+import PartnerForm from '../components/PartnerForm';
 
 const PartnersPage = () => {
   return (
-    <div className="site-wrap">
+    <>
       <Header />
-      <PageNameHeader pageName="Partner with us" />
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdYDrpRif1_7RwMHhwH8klZMMBqVJTKXnmv7yYsN6HY8vCgAA/viewform?embedded=true"
-        width="1220"
-        height="2363"
-      >
-        Loading…
-      </iframe>
+      <main id="main-content">
+        <PageNameHeader pageName="Partner with us" />
+        <div className="site-wrap">
+          <PartnerForm />
+        </div>
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

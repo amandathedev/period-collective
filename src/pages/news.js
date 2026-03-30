@@ -7,10 +7,10 @@ import PageNameHeader from '../components/PageNameHeader';
 const NewsPage = () => {
   return (
     <>
-      <div className="site-wrap">
-        <Header />
+      <Header />
+      <main id="main-content" className="site-wrap">
         <PageNameHeader pageName="News & Events" />
-      </div>
+      </main>
       <Footer />
     </>
   );

@@ -1,7 +1,13 @@
 import React from 'react';
+
+import { useSiteSettings } from '../../context/SiteSettingsContext';
 import './index.scss';
 
 const WaysToHelp = () => {
+  const settings = useSiteSettings();
+  const amazonLink = settings.amazonWishlistLink || 'https://www.amazon.com/hz/wishlist/ls/1EVIC1E58SZ4G?ref=cm_sw_em_r_un_un_gkRzhGwD7pKrD';
+  const donationLink = settings.donationLink || 'https://donate.stripe.com/28ocNSdyd0G0dgIaEE';
+
   return (
     <div className="ways-to-help">
       <h2 className="main-h2">Ways to get involved</h2>
@@ -16,8 +22,11 @@ const WaysToHelp = () => {
             <p>
               Donate period products, run a period supply drive, or order off of{' '}
               <a
-                href="https://www.amazon.com/hz/wishlist/ls/1EVIC1E58SZ4G?ref=cm_sw_em_r_un_un_gkRzhGwD7pKrD"
+                href={amazonLink}
                 className="link"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="our Amazon Wishlist (opens in new tab)"
               >
                 our Amazon Wishlist
               </a>
@@ -38,10 +47,11 @@ const WaysToHelp = () => {
               need.
             </p>
             <a
-              href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+              href={donationLink}
               target="_blank"
               className="blue-button"
               rel="noreferrer"
+              aria-label="Donate funds (opens in new tab)"
             >
               Donate
             </a>

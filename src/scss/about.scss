@@ -1,38 +1,64 @@
 @import "./global.scss";
 
 .about-page {
+  text-align: center;
+  padding-bottom: 3rem;
+
   .main-h2 {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.7;
     text-align: left;
-    width: 70%;
-    margin: 0 auto 3rem;
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
 
     @media (max-width: $mobile) {
       font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 2rem;
-      width: 90%;
     }
+  }
+}
+
+.about-partners {
+  text-align: center;
+  padding-bottom: 4rem;
+
+  .main-h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 
   .names-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    margin: 0 auto 4rem;
-    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 12px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
 
-    div {
-      border-radius: 15px;
-      border: 1px solid black;
-      padding: 1.2rem;
+    @media (max-width: $mobile) {
+      width: 100%;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    li {
+      list-style: none;
+      border-radius: 8px;
+      border: 1.5px solid var(--primary-blue);
+      padding: 0.9rem 1rem;
       margin: 0;
       text-align: center;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 64px;
     }
   }
 }

@@ -7,10 +7,10 @@ import PageNameHeader from '../components/PageNameHeader';
 const SharePage = () => {
   return (
     <>
-      <div className="site-wrap">
-        <Header />
+      <Header />
+      <main id="main-content" className="site-wrap">
         <PageNameHeader pageName="Spread the Word" />
-      </div>
+      </main>
       <Footer />
     </>
   );

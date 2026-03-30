@@ -47,7 +47,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
 
       @media (min-width: $desktop) {
         width: 30vw;
@@ -69,14 +69,18 @@
         text-align: center;
         width: 70%;
         margin-bottom: 2rem;
+        flex: 1;
       }
 
       .blue-button {
-        padding: 32px;
+        margin-top: auto;
         margin-bottom: 2rem;
+        width: 80%;
+        text-align: center;
 
         @media (min-width: $desktop) {
-          padding: 1rem 3.2rem !important;
+          padding: 1rem 3.2rem;
+          width: 100%;
         }
       }
     }

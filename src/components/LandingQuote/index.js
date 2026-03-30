@@ -1,28 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
+import { useSiteSettings } from '../../context/SiteSettingsContext';
+import { fetchEntries } from '../../services/contentfulClient';
 import './index.scss';
 
 const LandingQuote = () => {
+  const settings = useSiteSettings();
+  const donationLink = settings.donationLink || 'https://donate.stripe.com/28ocNSdyd0G0dgIaEE';
+  const [content, setContent] = useState({});
+
+  useEffect(() => {
+    fetchEntries('homePage').then(items => {
+      if (items && items.length > 0) setContent(items[0].fields);
+    });
+  }, []);
+
+  const quoteText = content.quoteText || 'There are more than 65,000 people experiencing houselessness in Chicago, 40% of whom can menstruate.';
+  const attribution = content.quoteAttribution || '2020 Study by Chicago Coalition for the Homeless';
+  const attributionUrl = content.quoteAttributionUrl || 'https://www.chicagohomeless.org/';
+  const subheadline = content.quoteSubheadline || 'We believe everyone has the right to dignity.';
+
   return (
     <div className="landing-quote">
-      <h3>
-        There are more than 65,000 people experiencing houselessness in Chicago,
-        40% of whom can menstruate.
-      </h3>
+      <h3>{quoteText}</h3>
       <p className="quote-attr">
-        - 2020 Study by{' '}
-        <a href="https://www.chicagohomeless.org/">
-          Chicago Coalition for the Homeless
-        </a>
+        - <a href={attributionUrl}>{attribution}</a>
       </p>
-      <h4>We believe everyone has the right to dignity.</h4>
+      <h4>{subheadline}</h4>
       <a
-        href="https://donate.stripe.com/28ocNSdyd0G0dgIaEE"
+        href={donationLink}
         target="_blank"
         className="yellow-button"
         rel="noreferrer"
+        aria-label="Donate (opens in new tab)"
       >
-        Donate <img src="./images/black-heart-drop.svg" />
+        Donate <img src="./images/black-heart-drop.svg" alt="" aria-hidden="true" />
       </a>
     </div>
   );
