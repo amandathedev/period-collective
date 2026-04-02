@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import { useSiteSettings } from '../../context/SiteSettingsContext';
 import { fetchEntries } from '../../services/contentfulClient';
 import './index.scss';
 
 const LandingQuote = () => {
-  const settings = useSiteSettings();
   const [content, setContent] = useState({});
 
   useEffect(() => {

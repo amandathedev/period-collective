@@ -2,12 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { useSiteSettings } from '../../context/SiteSettingsContext';
 import { fetchEntries } from '../../services/contentfulClient';
 import './index.scss';
 
 const HowWeWork = () => {
-  const settings = useSiteSettings();
   const [steps, setSteps] = useState([]);
 
   useEffect(() => {
