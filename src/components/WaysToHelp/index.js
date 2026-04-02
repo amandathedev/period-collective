@@ -7,7 +7,6 @@ import './index.scss';
 
 const WaysToHelp = () => {
   const settings = useSiteSettings();
-  const amazonLink = settings.amazonWishlistLink || 'https://www.amazon.com/hz/wishlist/ls/1EVIC1E58SZ4G?ref=cm_sw_em_r_un_un_gkRzhGwD7pKrD';
   const donateSuppliesDescription = settings.donateSuppliesDescription || 'Donate period products, run a period supply drive, or order off of our Amazon Wishlist.';
   const donateFundsDescription = settings.donateFundsDescription || 'Help us buy period products in bulk and get them to people in need.';
   const volunteerDescription = settings.volunteerDescription || 'Help us deliver donations, run events, and get it all done! Or are you a videographer, graphic designer, or have another skill you can contribute? Join us!';
