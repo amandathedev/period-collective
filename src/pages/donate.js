@@ -67,7 +67,7 @@ const DonatePage = () => {
       <Header />
       <main id="main-content">
         <PageNameHeader pageName="Donate" />
-        <div className="site-wrap">
+        <div className="site-wrap donate-wrap">
           <div className="donate-page">
             <div className="frequency-toggle" role="group" aria-label="Donation frequency">
               <button
@@ -86,12 +86,19 @@ const DonatePage = () => {
               </button>
             </div>
 
-            {mode === 'subscription' && (
-              <div className="monthly-callout">
-                <strong>{monthlyCalloutText}</strong>
-                Your monthly gift makes a sustained, year-round impact.
-              </div>
-            )}
+            <div className="monthly-callout">
+              {mode === 'subscription' ? (
+                <>
+                  <strong>{monthlyCalloutText}</strong>
+                  Your monthly gift makes a sustained, year-round impact.
+                </>
+              ) : (
+                <>
+                  <strong>Every dollar counts.</strong>
+                  Your donation helps us buy period products in bulk and get them to people in need across Chicago.
+                </>
+              )}
+            </div>
 
             <span className="amount-label">
               {mode === 'subscription' ? 'Monthly amount' : 'Donation amount'}

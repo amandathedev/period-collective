@@ -3,6 +3,15 @@
 .contact-page {
   .donate-supplies-callout {
     background-color: transparent;
+
+    img {
+      @media (max-width: $mobile) {
+        max-height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+    }
   }
 
   .contact-us {

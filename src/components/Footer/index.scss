@@ -9,6 +9,11 @@
   font-size: 18px;
   width: 100%;
 
+  @media (max-width: $mobile) {
+    padding: 2rem 1.5rem;
+    font-size: 15px;
+  }
+
   .footer-container {
     flex-direction: row;
     display: flex;
@@ -86,6 +91,10 @@
     img {
       width: 13rem;
       padding-top: 0.6rem;
+
+      @media (max-width: $mobile) {
+        width: 9rem;
+      }
     }
   }
 }

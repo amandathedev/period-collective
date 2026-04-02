@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import { useSiteSettings } from '../../context/SiteSettingsContext';
 import { fetchEntries } from '../../services/contentfulClient';
 import './index.scss';
 
 const LandingQuote = () => {
-  const settings = useSiteSettings();
-  const donationLink = settings.donationLink || 'https://donate.stripe.com/28ocNSdyd0G0dgIaEE';
   const [content, setContent] = useState({});
 
   useEffect(() => {
@@ -28,11 +25,8 @@ const LandingQuote = () => {
       </p>
       <h4>{subheadline}</h4>
       <a
-        href={donationLink}
-        target="_blank"
+        href="/donate"
         className="yellow-button"
-        rel="noreferrer"
-        aria-label="Donate (opens in new tab)"
       >
         Donate <img src="./images/black-heart-drop.svg" alt="" aria-hidden="true" />
       </a>

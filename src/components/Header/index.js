@@ -10,8 +10,6 @@ import './index.scss';
 
 const Header = () => {
   const settings = useSiteSettings();
-  const donationLink = settings.donationLink || 'https://donate.stripe.com/28ocNSdyd0G0dgIaEE';
-
   return (
     <>
     <a href="#main-content" className="skip-nav">Skip to main content</a>
@@ -36,11 +34,8 @@ const Header = () => {
             {/*  Blog<span className="nav-divider"></span>*/}
             {/*</Nav.Link>*/}
             <a
-              href={donationLink}
-              target="_blank"
+              href="/donate"
               className="yellow-button"
-              rel="noreferrer"
-              aria-label="Donate (opens in new tab)"
             >
               Donate <img src="./images/black-heart-drop.svg" alt="" aria-hidden="true" />
             </a>
