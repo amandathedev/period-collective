@@ -8,7 +8,7 @@ const SharePage = () => {
   return (
     <>
       <Header />
-      <main className="site-wrap">
+      <main id="main-content">
         <PageNameHeader pageName="Spread the Word" />
       </main>
       <Footer />

@@ -1,8 +1,9 @@
 @import "../../scss/global.scss";
 
 .page-name {
+  margin-top: 6rem;
   padding: 36px 64px;
-  background-color: $primaryCoral;
+  background-color: var(--primary-coral);
 
   @media (max-width: $mobile) {
     padding: 16px;

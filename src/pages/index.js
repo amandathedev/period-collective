@@ -14,7 +14,7 @@ const LandingPage = () => {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         <Hero />
         <WhoWeAre />
         <HowWeWork />

@@ -1,50 +1,66 @@
 @import '../../scss/global.scss';
 
 .hero-container {
-  height: 40vh;
-  width: 100%;
-  padding: 0 32px;
   position: relative;
-  margin-top: 10vh;
+  width: 100%;
+  height: 40vh;
+  min-height: 280px;
+  margin-top: 6rem; // matches fixed header height
+  overflow: hidden;
 
-  @media (max-width: $desktop) {
-    height: 40vh;
-    padding: 0;
-    margin-top: 10vh;
+  @media (max-width: $mobile) {
+    height: 50vw;
+    min-height: 240px;
   }
 
-  .hero-text-container {
+  // Image fills the box completely — position absolute, no vw hacks
+  .hero-image {
     position: absolute;
-    top: 3rem;
-    left: 4rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .hero-text {
-      text-align: left;
-    }
+  // Gradient overlay also fills the box
+  .hero-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      var(--primary-coral) 26.04%,
+      rgba(179, 221, 242, 0) 100%
+    );
 
     @media (max-width: $mobile) {
-      top: 4rem;
-      left: 2rem;
+      background: linear-gradient(
+        135deg,
+        var(--primary-coral) 26.04%,
+        rgba(179, 221, 242, 0) 100%
+      );
     }
+  }
 
-    @media (min-width: $mobile) and (max-width: $desktop) {
-      top: 5rem;
-      left: 2rem;
-    }
+  // Text container fills the box as a flex column — content can never escape
+  .hero-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+    gap: 1.5rem;
 
-    .blue-button {
-      font-size: 24px;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-      margin-top: 3rem;
-
-      @media (max-width: $mobile) {
-        font-size: 20px;
-        margin-top: 1.4rem;
-      }
+    @media (max-width: $mobile) {
+      padding-left: 2rem;
+      gap: 1rem;
     }
 
     h1 {
@@ -53,7 +69,8 @@
       font-weight: 400;
       line-height: 48px;
       color: #000;
-      text-align: center;
+      text-align: left;
+      margin: 0;
 
       span {
         font-size: 40px;
@@ -65,15 +82,15 @@
       }
 
       @media (max-width: $mobile) {
-        font-size: 42px;
-        line-height: 38px;
+        font-size: 36px;
+        line-height: 34px;
 
         span {
-          font-size: 22px;
+          font-size: 20px;
         }
 
         .period {
-          font-size: 32px;
+          font-size: 28px;
         }
       }
 
@@ -90,32 +107,20 @@
         }
       }
     }
-  }
 
-  .hero-image-overlay {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 90%;
-    background: linear-gradient(
-      90deg,
-      #ef887a 26.04%,
-      rgba(179, 221, 242, 0) 100%
-    );
+    .blue-button {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      align-self: flex-start; // don't stretch full width
 
-    @media (max-width: $mobile) {
-      background: linear-gradient(
-        135deg,
-        #ef887a 26.04%,
-        rgba(179, 221, 242, 0) 100%
-      );
-
+      @media (max-width: $mobile) {
+        font-size: 18px;
+        padding: 8px 16px;
+      }
     }
-  }
-
-  .hero-image {
-    width: 100vw;
-    height: 90%;
-    object-fit: cover;
   }
 }

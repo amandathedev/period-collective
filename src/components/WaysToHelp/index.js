@@ -2,10 +2,15 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { AMAZON_WISHLIST_URL } from '../../constants';
+import { useSiteSettings } from '../../context/SiteSettingsContext';
 import './index.scss';
 
 const WaysToHelp = () => {
+  const settings = useSiteSettings();
+  const donateSuppliesDescription = settings.donateSuppliesDescription || 'Donate period products, run a period supply drive, or order off of our Amazon Wishlist.';
+  const donateFundsDescription = settings.donateFundsDescription || 'Help us buy period products in bulk and get them to people in need.';
+  const volunteerDescription = settings.volunteerDescription || 'Help us deliver donations, run events, and get it all done! Or are you a videographer, graphic designer, or have another skill you can contribute? Join us!';
+
   return (
     <section className="ways-to-help">
       <h2 className="main-h2">Ways to get involved</h2>
@@ -17,18 +22,7 @@ const WaysToHelp = () => {
               alt="Pile of packages of period supplies"
             />
             <h3>Donate Supplies</h3>
-            <p>
-              Donate period products, run a period supply drive, or order off of{' '}
-              <a
-                href={AMAZON_WISHLIST_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="link"
-              >
-                our Amazon Wishlist
-              </a>
-              .
-            </p>
+            <p>{donateSuppliesDescription}</p>
             <Link className="blue-button" to="/donate-supplies">
               Donate Supplies
             </Link>
@@ -39,13 +33,10 @@ const WaysToHelp = () => {
               alt="Pallets of boxes of period supplies"
             />
             <h3>Donate Funds</h3>
-            <p>
-              Help us buy period products in bulk and get them to people in
-              need.
-            </p>
-            <Link className="blue-button" to="/donate">
+            <p>{donateFundsDescription}</p>
+            <a href="/donate" className="blue-button">
               Donate
-            </Link>
+            </a>
           </div>
         </div>
         <div className="help-group">
@@ -55,11 +46,7 @@ const WaysToHelp = () => {
               alt="Two volunteers carrying boxes of period product donations"
             />
             <h3>Volunteer Time & Skills</h3>
-            <p>
-              Help us deliver donations, run events, and get it all done! Or are
-              you a videographer, graphic designer, or have another skill you
-              can contribute? Join us!
-            </p>
+            <p>{volunteerDescription}</p>
             <Link className="blue-button" to="/volunteer-signup">
               Volunteer Signup
             </Link>

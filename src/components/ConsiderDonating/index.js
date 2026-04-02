@@ -1,33 +1,40 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
+import { useSiteSettings } from '../../context/SiteSettingsContext';
 import './index.scss';
 
 const ConsiderDonating = ({ pageName }) => {
+  const settings = useSiteSettings();
+
+  const considerDonatingHeading = settings.considerDonatingHeading || 'Our number one need is funds. Consider donating today.';
+  const considerDonatingSubtext = settings.considerDonatingSubtext || 'Just $35 can keep a menstruator supplied for an entire year.';
+  const aboutDonatingHeading = settings.aboutDonatingHeading || 'We rely on donations and help from people like you.';
+  const aboutDonatingSubtext = settings.aboutDonatingSubtext || 'Join the movement.';
+
   return (
     <section className="consider-donating">
       {pageName === 'about' ? (
         <>
-          <h2>We rely on donations and help from people like you.</h2>
-          <p>Join the movement.</p>
+          <h2>{aboutDonatingHeading}</h2>
+          <p>{aboutDonatingSubtext}</p>
           <div className="button-container">
-            <Link className="yellow-button" to="/donate">
+            <a href="/donate" className="yellow-button">
               Donate <img src="./images/black-heart-drop.svg" alt="" aria-hidden="true" />
-            </Link>
-            <Link className="white-button" to="/volunteer-signup">
+            </a>
+            <a className="white-button" href="/volunteer-signup">
               Volunteer Signup
-            </Link>
+            </a>
           </div>
         </>
       ) : (
         <>
-          <h2>Our number one need is funds. Consider donating today.</h2>
-          <p>Just $35 can keep a menstruator supplied for an entire year.</p>
-          <Link className="yellow-button" to="/donate">
+          <h2>{considerDonatingHeading}</h2>
+          <p>{considerDonatingSubtext}</p>
+          <a href="/donate" className="yellow-button">
             Donate <img src="./images/black-heart-drop.svg" alt="" aria-hidden="true" />
-          </Link>
+          </a>
         </>
       )}
     </section>

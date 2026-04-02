@@ -8,7 +8,7 @@ const ContactLegislatorsPage = () => {
   return (
     <>
       <Header />
-      <main className="site-wrap">
+      <main id="main-content">
         <PageNameHeader pageName="Contact Legislators" />
       </main>
       <Footer />

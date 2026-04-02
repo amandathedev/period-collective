@@ -2,14 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-// Colors
-$primaryBlue: #00626c;
-$blueHover: #008693;
+// Colors — defaults can be overridden by Contentful siteSettings
+:root {
+  --primary-blue: #00626c;
+  --blue-hover: #008693;
+  --crystal: #b5d7d9;
+  --primary-coral: #ef887a;
+  --light-coral: #ffd8cc;
+  --primary-yellow: #ffce07;
+  --yellow-hover: #ffeb9b;
+  --light-gray: #f2f1ef;
+}
+
 $crystal: #b5d7d9;
-$primaryCoral: #ef887a;
-$lightCoral: #ffd8cc;
-$primaryYellow: #ffce07;
-$yellowHover: #ffeb9b;
 $lightGray: #f2f1ef;
 
 // Media queries
@@ -27,8 +32,8 @@ $desktop: 1023px; // min
 
 // Buttons
 .blue-button {
-  background-color: $primaryBlue;
-  border: $primaryBlue;
+  background-color: var(--primary-blue);
+  border: var(--primary-blue);
   color: white;
   border-radius: 0;
   cursor: pointer;
@@ -45,20 +50,20 @@ $desktop: 1023px; // min
   padding: 1rem;
 
   &:hover {
-    background-color: $blueHover;
+    background-color: var(--blue-hover);
     text-decoration: none;
     color: white;
   }
 
   &:active {
-    background: $blueHover;
+    background: var(--blue-hover);
     text-decoration: none;
     color: white;
   }
 
   &:focus {
     text-decoration: none;
-    background: $blueHover;
+    background: var(--blue-hover);
     color: white;
   }
 
@@ -86,7 +91,7 @@ $desktop: 1023px; // min
 
 .yellow-button {
   @extend .blue-button;
-  background-color: $primaryYellow;
+  background-color: var(--primary-yellow);
   border: 4px solid black;
   font-size: 26px;
   line-height: 28px;
@@ -96,7 +101,7 @@ $desktop: 1023px; // min
   &:hover,
   &:active,
   &:focus {
-    background-color: $yellowHover;
+    background-color: var(--yellow-hover);
     text-decoration: none;
     color: black;
     border: 4px solid black;
@@ -120,7 +125,7 @@ $desktop: 1023px; // min
   &:hover,
   &:active,
   &:focus {
-    background-color: $yellowHover;
+    background-color: var(--yellow-hover);
     text-decoration: none;
     color: black;
     border: 4px solid black;
@@ -233,7 +238,7 @@ iframe {
 }
 
 .link {
-  color: $primaryBlue;
+  color: var(--primary-blue);
   font-weight: 400;
   line-height: 28px;
   text-align: center;
@@ -241,7 +246,7 @@ iframe {
 
   &:hover {
     text-decoration: none;
-    color: $blueHover;
+    color: var(--blue-hover);
   }
 }
 

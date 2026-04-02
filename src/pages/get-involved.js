@@ -11,12 +11,14 @@ const GetInvolvedPage = () => {
   return (
     <>
       <Header />
-      <main className="site-wrap">
+      <main id="main-content">
         <PageNameHeader pageName="Get Involved" />
-        <VolunteerQuote />
-        <WaysToHelp />
+        <div className="site-wrap">
+          <VolunteerQuote />
+          <WaysToHelp />
+        </div>
+        <ConsiderDonating />
       </main>
-      <ConsiderDonating />
       <Footer />
     </>
   );

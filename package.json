@@ -16,6 +16,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "sass": "^1.63.4",
+    "stripe": "^20.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -44,6 +45,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.1.1",
+    "contentful-management": "^11.75.0",
     "css-loader": "^6.7.2",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
