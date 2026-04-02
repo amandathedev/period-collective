@@ -8,7 +8,6 @@ import './index.scss';
 
 const HowWeWork = () => {
   const settings = useSiteSettings();
-  const donationLink = settings.donationLink || 'https://donate.stripe.com/28ocNSdyd0G0dgIaEE';
   const [steps, setSteps] = useState([]);
 
   useEffect(() => {
@@ -34,7 +33,7 @@ const HowWeWork = () => {
       photoUrl: null,
       localPhoto: './images/one-big.png',
       buttonText: 'See Where to Donate',
-      buttonLink: donationLink,
+      buttonLink: '/donate',
     },
     {
       label: 'TWO',
