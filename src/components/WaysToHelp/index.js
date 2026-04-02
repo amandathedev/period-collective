@@ -8,7 +8,9 @@ import './index.scss';
 const WaysToHelp = () => {
   const settings = useSiteSettings();
   const amazonLink = settings.amazonWishlistLink || 'https://www.amazon.com/hz/wishlist/ls/1EVIC1E58SZ4G?ref=cm_sw_em_r_un_un_gkRzhGwD7pKrD';
-  const donationLink = settings.donationLink || 'https://donate.stripe.com/28ocNSdyd0G0dgIaEE';
+  const donateSuppliesDescription = settings.donateSuppliesDescription || 'Donate period products, run a period supply drive, or order off of our Amazon Wishlist.';
+  const donateFundsDescription = settings.donateFundsDescription || 'Help us buy period products in bulk and get them to people in need.';
+  const volunteerDescription = settings.volunteerDescription || 'Help us deliver donations, run events, and get it all done! Or are you a videographer, graphic designer, or have another skill you can contribute? Join us!';
 
   return (
     <section className="ways-to-help">
@@ -21,19 +23,7 @@ const WaysToHelp = () => {
               alt="Pile of packages of period supplies"
             />
             <h3>Donate Supplies</h3>
-            <p>
-              Donate period products, run a period supply drive, or order off of{' '}
-              <a
-                href={amazonLink}
-                className="link"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="our Amazon Wishlist (opens in new tab)"
-              >
-                our Amazon Wishlist
-              </a>
-              .
-            </p>
+            <p>{donateSuppliesDescription}</p>
             <Link className="blue-button" to="/donate-supplies">
               Donate Supplies
             </Link>
@@ -44,17 +34,8 @@ const WaysToHelp = () => {
               alt="Pallets of boxes of period supplies"
             />
             <h3>Donate Funds</h3>
-            <p>
-              Help us buy period products in bulk and get them to people in
-              need.
-            </p>
-            <a
-              href={donationLink}
-              target="_blank"
-              className="blue-button"
-              rel="noreferrer"
-              aria-label="Donate funds (opens in new tab)"
-            >
+            <p>{donateFundsDescription}</p>
+            <a href="/donate" className="blue-button">
               Donate
             </a>
           </div>
@@ -66,11 +47,7 @@ const WaysToHelp = () => {
               alt="Two volunteers carrying boxes of period product donations"
             />
             <h3>Volunteer Time & Skills</h3>
-            <p>
-              Help us deliver donations, run events, and get it all done! Or are
-              you a videographer, graphic designer, or have another skill you
-              can contribute? Join us!
-            </p>
+            <p>{volunteerDescription}</p>
             <Link className="blue-button" to="/volunteer-signup">
               Volunteer Signup
             </Link>

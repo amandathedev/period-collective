@@ -3,11 +3,14 @@ import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PageNameHeader from '../components/PageNameHeader';
+import { useSiteSettings } from '../context/SiteSettingsContext';
 import '../scss/donate.scss';
 
 const PRESET_AMOUNTS = [10, 25, 50, 100];
 
 const DonatePage = () => {
+  const settings = useSiteSettings();
+  const monthlyCalloutText = settings.monthlyCalloutText || 'Just $35 keeps a menstruator supplied for an entire year.';
   const [mode, setMode] = useState('one-time');
   const [selectedAmount, setSelectedAmount] = useState(null);
   const [customAmount, setCustomAmount] = useState('');
@@ -85,7 +88,7 @@ const DonatePage = () => {
 
             {mode === 'subscription' && (
               <div className="monthly-callout">
-                <strong>Just $35 keeps a menstruator supplied for an entire year.</strong>
+                <strong>{monthlyCalloutText}</strong>
                 Your monthly gift makes a sustained, year-round impact.
               </div>
             )}

@@ -8,7 +8,7 @@ const NewsPage = () => {
   return (
     <>
       <Header />
-      <main id="main-content" className="site-wrap">
+      <main id="main-content">
         <PageNameHeader pageName="News & Events" />
       </main>
       <Footer />

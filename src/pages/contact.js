@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PageNameHeader from '../components/PageNameHeader';
+import { useSiteSettings } from '../context/SiteSettingsContext';
 
 import '../scss/contact.scss';
 import '../scss/forms.scss';
@@ -15,6 +16,12 @@ const encode = (data) =>
     .join('&');
 
 const ContactPage = () => {
+  const settings = useSiteSettings();
+  const contactPartnerHeading = settings.contactPartnerHeading || 'Do you represent an organization interested in partnering with us?';
+  const contactPartnerText = settings.contactPartnerText || "We're always looking for new partners to help us reach more people. Please visit our partner page to learn more about how we can work together.";
+  const contactVolunteerHeading = settings.contactVolunteerHeading || 'Interested in volunteering with us?';
+  const contactVolunteerText = settings.contactVolunteerText || 'Please visit our volunteer signup page to sign up for our volunteer newsletter.';
+
   const [fields, setFields] = useState({ email: '', name: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
@@ -40,31 +47,15 @@ const ContactPage = () => {
         <div className="site-wrap contact-page">
           <div className="donate-supplies-callout mt-3">
             <div className="left">
-              <h3 className="main-h3">
-                Do you represent an organization interested in partnering with us?
-              </h3>
-              <p className="center">
-                We&apos;re always looking for new partners to help us reach more
-                people. Please visit{' '}
-                <Link to="/partners" className="link">
-                  our partner page
-                </Link>{' '}
-                to learn more about how we can work together.
-              </p>
-              <h3 className="main-h3 mt-4 mb-0">
-                Interested in volunteering with us?
-              </h3>
-              <p className="center">
-                Please visit our{' '}
-                <a href="/volunteer-signup" className="link">
-                  volunteer signup page
-                </a>{' '}
-                to sign up for our volunteer newsletter.
-              </p>
+              <h3 className="main-h3">{contactPartnerHeading}</h3>
+              <p className="center">{contactPartnerText}</p>
+              <h3 className="main-h3 mt-4 mb-0">{contactVolunteerHeading}</h3>
+              <p className="center">{contactVolunteerText}</p>
             </div>
             <div>
               <img src="./images/supplies.jpg" alt="Period supplies including pads, tampons, and liners" />
             </div>
+          </div>
 
           <h3 className="main-h3 mt-4">Send Us a Message</h3>
           <p className="form-intro">If you have a question or comment, please submit the form below and someone from The Period Collective will be in touch!</p>

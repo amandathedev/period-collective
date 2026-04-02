@@ -82,6 +82,15 @@
       margin-bottom: 6px;
     }
 
+    .field-error {
+      color: #c0392b;
+      font-size: 12px;
+      margin-top: 4px;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
     input,
     textarea {
       border: 1.5px solid #ccc;
@@ -98,6 +107,14 @@
         outline: none;
         border-color: var(--primary-blue);
         box-shadow: 0 0 0 3px rgba(0, 98, 108, 0.12);
+      }
+
+      &.input--error {
+        border-color: #c0392b;
+
+        &:focus {
+          box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12);
+        }
       }
     }
 

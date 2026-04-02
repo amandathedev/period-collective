@@ -12,8 +12,8 @@ const GetInvolvedPage = () => {
     <>
       <Header />
       <main id="main-content">
+        <PageNameHeader pageName="Get Involved" />
         <div className="site-wrap">
-          <PageNameHeader pageName="Get Involved" />
           <VolunteerQuote />
           <WaysToHelp />
         </div>

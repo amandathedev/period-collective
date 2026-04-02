@@ -56,8 +56,8 @@ const PackingPartyPage = () => {
     <>
       <Header />
       <main id="main-content">
+        <PageNameHeader pageName="Packing Parties" />
         <div className="site-wrap packing-parties">
-          <PageNameHeader pageName="Packing Parties" />
           <div className="info">
             <h2 className="main-h2">What is it?</h2>
             <p>{intro}</p>

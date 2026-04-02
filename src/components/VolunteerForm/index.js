@@ -14,6 +14,43 @@ const HELP_OPTIONS = [
   'Administrative or creative skills',
 ];
 
+const NAME_RE = /^[a-zA-Z\s'-]+$/;
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE_RE = /^[\d\s\-().+]+$/;
+const LOCATION_RE = /^[a-zA-Z0-9\s,.'/-]+$/;
+
+const validate = (fields) => {
+  const errors = {};
+
+  if (!fields['first-name'].trim()) {
+    errors['first-name'] = 'First name is required.';
+  } else if (!NAME_RE.test(fields['first-name'].trim())) {
+    errors['first-name'] = 'Please enter a valid first name.';
+  }
+
+  if (!fields['last-name'].trim()) {
+    errors['last-name'] = 'Last name is required.';
+  } else if (!NAME_RE.test(fields['last-name'].trim())) {
+    errors['last-name'] = 'Please enter a valid last name.';
+  }
+
+  if (!fields.email.trim()) {
+    errors.email = 'Email is required.';
+  } else if (!EMAIL_RE.test(fields.email.trim())) {
+    errors.email = 'Please enter a valid email address.';
+  }
+
+  if (fields.phone.trim() && !PHONE_RE.test(fields.phone.trim())) {
+    errors.phone = 'Please enter a valid phone number.';
+  }
+
+  if (fields.location.trim() && !LOCATION_RE.test(fields.location.trim())) {
+    errors.location = 'Please enter a valid location.';
+  }
+
+  return errors;
+};
+
 const VolunteerForm = () => {
   const [fields, setFields] = useState({
     'first-name': '',
@@ -24,12 +61,17 @@ const VolunteerForm = () => {
     'contact-me': false,
   });
   const [helpOptions, setHelpOptions] = useState([]);
+  const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
 
   const handle = e => {
     const { name, value, type, checked } = e.target;
-    setFields({ ...fields, [name]: type === 'checkbox' ? checked : value });
+    let sanitized = type === 'checkbox' ? checked : value;
+    if (name === 'phone') sanitized = value.replace(/[^\d\s\-().+]/g, '');
+    if (name === 'first-name' || name === 'last-name') sanitized = value.replace(/[^a-zA-Z\s'-]/g, '');
+    setFields({ ...fields, [name]: sanitized });
+    if (errors[name]) setErrors({ ...errors, [name]: null });
   };
 
   const handleCheckbox = e => {
@@ -41,6 +83,11 @@ const VolunteerForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    const validationErrors = validate(fields);
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
     const data = {
       'form-name': 'volunteer-form',
       ...fields,
@@ -75,6 +122,7 @@ const VolunteerForm = () => {
       method="POST"
       data-netlify="true"
       onSubmit={handleSubmit}
+      noValidate
     >
       <input type="hidden" name="form-name" value="volunteer-form" />
 
@@ -83,29 +131,74 @@ const VolunteerForm = () => {
       <div className="form-row two-col">
         <div className="form-group">
           <label htmlFor="first-name">First Name <span className="required">*</span></label>
-          <input id="first-name" type="text" name="first-name" required value={fields['first-name']} onChange={handle} />
+          <input
+            id="first-name"
+            type="text"
+            name="first-name"
+            value={fields['first-name']}
+            onChange={handle}
+            className={errors['first-name'] ? 'input--error' : ''}
+            aria-describedby={errors['first-name'] ? 'first-name-error' : undefined}
+          />
+          {errors['first-name'] && <span id="first-name-error" className="field-error">{errors['first-name']}</span>}
         </div>
         <div className="form-group">
           <label htmlFor="last-name">Last Name <span className="required">*</span></label>
-          <input id="last-name" type="text" name="last-name" required value={fields['last-name']} onChange={handle} />
+          <input
+            id="last-name"
+            type="text"
+            name="last-name"
+            value={fields['last-name']}
+            onChange={handle}
+            className={errors['last-name'] ? 'input--error' : ''}
+            aria-describedby={errors['last-name'] ? 'last-name-error' : undefined}
+          />
+          {errors['last-name'] && <span id="last-name-error" className="field-error">{errors['last-name']}</span>}
         </div>
       </div>
 
       <div className="form-row two-col">
         <div className="form-group">
           <label htmlFor="email">Email <span className="required">*</span></label>
-          <input id="email" type="email" name="email" required value={fields.email} onChange={handle} />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            value={fields.email}
+            onChange={handle}
+            className={errors.email ? 'input--error' : ''}
+            aria-describedby={errors.email ? 'email-error' : undefined}
+          />
+          {errors.email && <span id="email-error" className="field-error">{errors.email}</span>}
         </div>
         <div className="form-group">
           <label htmlFor="phone">Phone Number</label>
-          <input id="phone" type="tel" name="phone" value={fields.phone} onChange={handle} />
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            value={fields.phone}
+            onChange={handle}
+            className={errors.phone ? 'input--error' : ''}
+            aria-describedby={errors.phone ? 'phone-error' : undefined}
+          />
+          {errors.phone && <span id="phone-error" className="field-error">{errors.phone}</span>}
         </div>
       </div>
 
       <div className="form-row">
         <div className="form-group full">
           <label htmlFor="location">Location (Town / Neighborhood)</label>
-          <input id="location" type="text" name="location" value={fields.location} onChange={handle} />
+          <input
+            id="location"
+            type="text"
+            name="location"
+            value={fields.location}
+            onChange={handle}
+            className={errors.location ? 'input--error' : ''}
+            aria-describedby={errors.location ? 'location-error' : undefined}
+          />
+          {errors.location && <span id="location-error" className="field-error">{errors.location}</span>}
         </div>
       </div>
 

@@ -42,33 +42,32 @@ const DonateSuppliesPage = () => {
     <>
       <Header />
       <main id="main-content">
-        <div className="site-wrap">
-          <PageNameHeader pageName="Donate Supplies" />
-          <div className="amazon-callout">
-            <h2>Order directly off of our Amazon Wishlist</h2>
-            <p>
-              Hassle free, ship directly to us, and we&apos;ll handle the rest!
-            </p>
-            <a
-              href={amazonLink}
-              target="_blank"
-              className="white-button"
-              rel="noreferrer"
-            >
-              Let&apos;s do it
+        <PageNameHeader pageName="Donate Supplies" />
+
+        <div className="amazon-callout">
+          <h2>Order directly off of our Amazon Wishlist</h2>
+          <p>Hassle free, ship directly to us, and we&apos;ll handle the rest!</p>
+          <a
+            href={amazonLink}
+            target="_blank"
+            className="blue-button"
+            rel="noreferrer"
+          >
+            Let&apos;s do it
+          </a>
+        </div>
+
+        <div className="shipping-callout">
+          <p>
+            If you have products you&apos;d like to drop off or ship to us,
+            please contact us at{' '}
+            <a href={`mailto:${contactEmail}`} className="link">
+              {contactEmail}
             </a>
-          </div>
+          </p>
+        </div>
 
-          <div className="shipping-callout">
-            <p>
-              If you have products you&apos;d like to drop off or ship to us,
-              please contact us at{' '}
-              <a href={`mailto:${contactEmail}`} className="link">
-                {contactEmail}
-              </a>
-            </p>
-          </div>
-
+        <div className="site-wrap">
           <div className="donate-supplies-callout">
             <div className="left">
               <h2>Supplies we need</h2>
@@ -78,8 +77,8 @@ const DonateSuppliesPage = () => {
                 ))}
               </ul>
             </div>
-            <div>
-              <img src="./images/supplies.jpg" alt="Period supplies" />
+            <div className="supplies-image">
+              <img src="./images/supplies.jpg" alt="Period supplies including pads, tampons, and liners" />
             </div>
           </div>
         </div>

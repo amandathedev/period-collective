@@ -64,7 +64,7 @@
 
     @media (max-width: $mobile) {
       background-color: white;
-      padding: 2rem;
+      padding: 0.5rem 1.5rem 1.25rem;
       border: 1px solid var(--primary-coral);
       font-size: 18px;
       justify-content: left;
@@ -72,10 +72,22 @@
       .navbar-nav {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
       }
 
       .nav-link {
-        padding-bottom: 1rem;
+        padding: 0.5rem 0;
+        font-size: 20px;
+      }
+
+      .yellow-button {
+        margin-top: 0.75rem;
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+        height: 48px;
+        padding: 0.5rem 1rem;
+        justify-content: center;
       }
     }
 
