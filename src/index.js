@@ -22,6 +22,8 @@ const SharePage = lazy(() => import('./pages/share'));
 const DonateSuccessPage = lazy(() => import('./pages/donate-success'));
 const DonateCancelPage = lazy(() => import('./pages/donate-cancel'));
 const VolunteerSignupPage = lazy(() => import('./pages/volunteer-signup'));
+const BlogPage = lazy(() => import('./pages/blog'));
+const BlogPostPage = lazy(() => import('./pages/blog-post'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -43,6 +45,8 @@ root.render(
           <Route path="packing-party" element={<PackingPartyPage />} />
           <Route path="contact-legislators" element={<ContactLegislatorsPage />} />
           <Route path="spread-the-word" element={<SharePage />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="blog/:slug" element={<BlogPostPage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
